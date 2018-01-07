@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
 nav {
   padding-left: 1300px;
   padding-right: 50px;
@@ -21,11 +25,12 @@ header {
   left: 90px;
 }
 
-h1, h2, h3, h4 {
-  font-weight: bold;
+footer p {
+  font-size: 13px;
 }
 
 .banner {
+  color: white;
 }
 
 .container {
@@ -41,8 +46,4 @@ h1, h2, h3, h4 {
 .example img {
   height: 300px;
   weight: 300px;
-}
-
-div.excursion {
-  padding-bottom: 37px;
 }
