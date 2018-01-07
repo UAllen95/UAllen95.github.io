@@ -1,0 +1,48 @@
+* {
+  font-family: Helvetica;
+  text-align: center;
+}
+
+nav {
+  padding-left: 1300px;
+  padding-right: 50px;
+  position: absolute;
+  background-color: green;
+  left: 60px;
+}
+
+nav li {
+  text-align: right;
+}
+
+header {
+  position: absolute;
+  top: 17px;
+  left: 90px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.banner {
+}
+
+.container {
+  padding-top: 120px;
+}
+
+.example {
+  display: inline-block;
+  padding: 30px;
+  border: 5px solid green;
+}
+
+.example img {
+  height: 300px;
+  weight: 300px;
+}
+
+div.excursion {
+  padding-bottom: 37px;
+}
