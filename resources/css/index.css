@@ -33,6 +33,11 @@ footer p {
   color: white;
 }
 
+.me img {
+  width: 250px;
+  height: 200px;
+}
+
 .container {
   padding-top: 120px;
 }
@@ -46,4 +51,24 @@ footer p {
 .example img {
   height: 300px;
   weight: 300px;
+}
+
+.me,
+.text {
+  display: inline-block;
+}
+
+.me {
+  padding-right: 75px;
+}
+
+.text {
+  position: relative;
+  bottom: 120px;
+}
+
+.text h1,
+.text p {
+  text-align: left;
+  font-family: inherit;
 }
