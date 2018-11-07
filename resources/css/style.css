@@ -60,3 +60,8 @@ body {
 .code-icon {
   width: 50%;
 }
+
+footer {
+  background-color: #E6E7F0;
+  padding: 20px;
+}
