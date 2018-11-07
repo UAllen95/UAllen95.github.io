@@ -1,0 +1,55 @@
+body {
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar-default {
+  background-color: #fff986;
+  border: #fff986;
+  margin: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav li a {
+  color: black;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-nav li a:hover {
+  color: #154854;
+}
+
+/* Main */
+
+.jumbotron {
+  background-color: #154854;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron .image-container {
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:-4px;
+  width: 40%;
+}
+
+.jumbotron .text-container,
+.code-icon {
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:-4px;
+}
+
+/* SEO */
+.strong {
+  font-weight: bold;
+}
+
+/* Web developer */
+.code-icon {
+  width: 50%;
+}
