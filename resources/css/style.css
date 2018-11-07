@@ -20,22 +20,29 @@ body {
   color: #154854;
 }
 
-/* Main */
+.navbar-header.navbar-brand img {
+  height: 100%;
+  margin-bottom: 5px;
+}
 
+.navbar-header .navbar-text p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Main */
 .jumbotron {
   background-color: #154854;
   text-align: center;
   color: white;
+  margin-top: 50px;
 }
 
 .jumbotron .image-container {
-  float:none;
-  display:inline-block;
-  vertical-align:middle;
-  margin-right:-4px;
   width: 40%;
 }
 
+.jumbotron .image-container,
 .jumbotron .text-container,
 .code-icon {
   float:none;

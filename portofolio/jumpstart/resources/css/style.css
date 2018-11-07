@@ -1,0 +1,166 @@
+html {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Buttons */
+
+a.btn-primary {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #399bd1;
+  width: 11.4rem;
+  padding: 1.3rem 0;
+  margin-top: 2.8rem;
+  font-size: 1.3rem;
+}
+
+a.btn-primary:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+a.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+.navbar-header {
+  background-color: #fff986;
+}
+
+.navbar-header .navbar-brand {
+  padding-top: 0;
+}
+
+.navbar-header .navbar-brand img {
+  height: 140%;
+  margin-bottom: 5px;
+}
+
+.navbar-default .navbar-nav {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover {
+  color: #399bd1;
+  background-color: #f8f8f8;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  padding: 11.85rem 0;
+}
+
+.jumbotron h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 7.1rem;
+}
+
+.jumbotron p {
+   max-width: 51.3rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.background-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.background-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.background-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.background-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+}
+
+/* Section */
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+h3.featured {
+  padding-bottom: 20px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.7;
+  transition: 0.5s, 0.5s;
+}
+
+.image-container img:hover {
+  transform: scale(1.3, 1.3);
+  opacity: 1;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4.product {
+  color: #399bd1;
+}
+
+.list li {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
+}
+
+h4.project-item-title {
+  padding-top: 10px;
+}
+
+section.main {
+  margin-bottom: 5.85rem;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: #f3f3f3;
+  padding: 5.2rem 0;
+}
+
+footer h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+footer p {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.4rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 480px) {
+  .hide-this {
+    display: none;
+  }
+
+  .background-bike h1 {
+    font-size: 5.7rem;
+  }
+}

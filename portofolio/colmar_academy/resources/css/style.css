@@ -1,0 +1,365 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Rammetto One', cursive, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #E6E7F0;
+  border-bottom: solid 2px #453073;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 2rem;
+  padding-left: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gray {
+  color: gray;
+}
+
+nav {
+  padding-right: 1.5rem;
+}
+
+span {
+  padding-left: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#main {
+  color: #E6E7F0;
+  background-color: #7C56CF;
+  border-bottom: solid 2px #453073;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#main img {
+  width: 60%;
+  height: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.cta {
+  width: 35%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+h3.padding {
+  padding: 1rem 0;
+}
+
+.button {
+  color: white;
+  font-weight: normal;
+  background-color: #fff986;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto 30px auto;
+}
+
+.button p {
+  font-size: 1.5rem;
+}
+
+.container {
+  background-color: white;
+  border-bottom: solid 2px #453073;
+  width: 100%;
+  display: flex;
+}
+
+.container h1 {
+  color: #453073;
+}
+
+.info {
+  width: 60%;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.info img {
+  width: 100%;
+  padding-top: 1.5rem;
+  height: auto;
+}
+
+.info h1 {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.info h3 {
+  color: #471D70;
+  padding: 1.5rem 0;
+}
+
+.info h5 {
+  padding: 2rem 0;
+}
+
+.list {
+  width: 40%;
+}
+
+.box {
+  border: solid 1px #453073;
+  border-radius: 3px 0 0 3px;
+  display: flex;
+}
+
+.box img {
+  width: 35%;
+  height: 35%;
+  padding: 1rem;
+}
+
+.box.first,
+.box.third {
+  background-color: #A9B6FF;
+}
+
+.box.secound {
+  background-color: #7B88F2;
+}
+
+.text {
+  width: 65%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.text h3,
+.text p {
+  width: 100%;
+}
+
+.text p.padding {
+  padding: 0.5rem 0;
+}
+
+#learn {
+  background-color: #7C56CF;
+  border-bottom: solid 2px #453073;
+}
+
+#learn .center {
+  color: #E6E7F0;
+}
+
+.center {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.center.exhibit {
+  color: #471D70;
+  background-color: white;
+}
+
+.cta-center {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #E6E7F0;
+  border-radius: 3px;
+  width: 30%;
+  margin: 1rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.learn-text h3 {
+  color: #32488A;
+  padding: 1rem;
+}
+
+.courses {
+  padding: 0.5rem 1rem;
+}
+
+.courses-text {
+  padding: 1.5rem 1rem;
+}
+
+footer {
+  background-color: #E6E7F0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h6,
+footer nav {
+  padding: 1rem 1.5rem;
+}
+
+footer span {
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 976px) {
+  #main {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    border: 0;
+  }
+
+  #logo h2,
+  header nav,
+  #learn img,
+  #learn p,
+  .list.exhibit,
+  .list img,
+  .info.practice,
+  .info.exhibit h3,
+  .info.exhibit p,
+  footer nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hidden {
+    display: inline-block;
+  }
+
+  .login {
+    padding-right: 1.5rem;
+  }
+
+  #main img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cta {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .box {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box.first,
+  .box.third {
+    background-color: #E6E7F0;
+  }
+
+  .box.secound {
+    background-color: #A9B6FF;
+  }
+
+  .hidden img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .text {
+    padding: 1rem;
+  }
+
+  .item {
+    width: 100%;
+    margin: 0.5rem;
+  }
+
+  .info.exhibit {
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .info.exhibit video {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+  }
+
+  footer h6 {
+    padding: 1rem;
+  }
+}
