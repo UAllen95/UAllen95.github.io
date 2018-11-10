@@ -9,20 +9,20 @@ h2 {
 
 /* Navbar */
 .navbar-default {
-  background-color: #fff986;
-  border: #fff986;
+  background-color: #154854;
+  border: #154854;
   margin: 0;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
-  color: black;
+  color: white;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-nav li a:hover {
-  color: #154854;
+  color: #fff986;
 }
 
 .navbar-header.navbar-brand img {
@@ -37,9 +37,9 @@ h2 {
 
 /* Main */
 .jumbotron {
-  background-color: #154854;
+  background-color: #fff986;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 50px;
 }
 
@@ -48,22 +48,11 @@ h2 {
 }
 
 .jumbotron .image-container,
-.jumbotron .text-container,
-.code-icon {
+.jumbotron .text-container {
   float:none;
   display:inline-block;
   vertical-align:middle;
   margin-right:-4px;
-}
-
-/* SEO */
-.strong {
-  font-weight: bold;
-}
-
-/* Web developer */
-.code-icon {
-  width: 50%;
 }
 
 footer {

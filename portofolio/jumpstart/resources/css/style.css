@@ -156,10 +156,6 @@ footer p {
 /* Media Queries */
 
 @media only screen and (max-width: 480px) {
-  .hide-this {
-    display: none;
-  }
-
   .background-bike h1 {
     font-size: 5.7rem;
   }
