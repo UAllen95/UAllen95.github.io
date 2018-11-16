@@ -22,17 +22,11 @@ h2 {
 }
 
 p {
-  text-align: left;
-  font-size: 2.5rem;
+  font-size: 1.2rem;
 }
 
 .text-center {
   text-align: center;
-}
-
-.yellow-container {
-  background-color: #fff986;
-  width: 100%;
 }
 
 /* General - Images */
@@ -50,6 +44,13 @@ p {
   opacity: 1;
 }
 
+/* General - Backgrounds */
+.yellow-background {
+  background-color: #fff986;
+  padding: 20px;
+  width: 100%;
+}
+
 /* Navbar */
 .navbar-default {
   background-color: #fff986;
@@ -58,29 +59,42 @@ p {
   font-family: monospace;
 }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav li a {
-  color: black;
+.navbar-header,
+.navbar-header ul {
+  width: 100%;
+  margin: 0!important;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:active,
+.navbar-default .navbar-nav li a {
+  color: black;
+  padding-bottom: 0;
+}
+
 .navbar-default .navbar-nav li a:hover {
   color: #154854;
 }
-
-.navbar-header.navbar-brand img {
-  height: 100%;
-  margin-bottom: 5px;
+.navbar-default .navbar-nav li a.red:hover {
+  color: #AB1919;
 }
 
-.navbar-header .navbar-text p {
-  font-size: 1.1rem;
-  font-weight: bold;
+.navbar-header li {
+  width: 25%;
+  margin: 0;
+  display: inline-block;
 }
 
-.navbar-collapse {
-  border: 0;
+.navbar-header img {
+  width: 40%;
+}
+
+.navbar-header p.little-show {
+  display: none;
+}
+
+.navbar-header .dropdown img {
+}
+
+.navbar-header .dropdown p {
 }
 
 /* Main */
@@ -88,7 +102,6 @@ p {
   background-color: #154854;
   text-align: center;
   color: white;
-  margin-top: 50px;
 }
 
 .jumbotron .logo-container {
@@ -111,10 +124,6 @@ p {
   font-style: italic;
 }
 
-.seo li.gray {
-  background-color: lightgray;
-}
-
 .seo li.less-text {
   font-size: 3rem;
 }
@@ -133,8 +142,60 @@ footer {
   margin-top: 50px;
 }
 
+footer a {
+  color: #fff986;
+}
+
+footer a:hover {
+  color: white;
+}
+
 @media only screen and (max-width: 767px) {
-  .jumbotron {
-    margin-top: 145px;
+  .navbar-header li {
+    width: 24%;
+    bottom: 20px;
+  }
+
+  .navbar-header li.nav-no-padding {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 623px) {
+  .navbar-header li {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 607px) {
+  .navbar-header li {
+    bottom: 0;
+  }
+
+  .navbar-header li.nav-more-padding {
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .navbar-default .container-fluid {
+    padding: 0
+  }
+
+  .navbar-header li {
+    width: 20%;
+  }
+
+  .navbar-header li p {
+    display: none;
+  }
+
+  .navbar-header li.nav-more-padding {
+    bottom: 0;
+  }
+
+  .navbar-header li img {
+    width: 100%;
+    padding-bottom: 10px;
   }
 }
