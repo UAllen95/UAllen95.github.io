@@ -2,12 +2,10 @@ body {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  font-weight: bold;
 }
 
 /* General - Headings */
-h1, h2, h4 {
-  font-weight: bold;
-}
 
 h1, h2 {
   font-family: 'Righteous', cursive;
@@ -22,7 +20,7 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .text-center {
@@ -87,14 +85,18 @@ p {
   width: 40%;
 }
 
+.navbar-header p {
+  padding: 10px 0;
+}
+
+.navbar-header .nav-second-element p,
+.navbar-header .nav-third-element p,
+.navbar-header .nav-fourth-element p {
+  padding: 30px 0;
+}
+
 .navbar-header p.little-show {
   display: none;
-}
-
-.navbar-header .dropdown img {
-}
-
-.navbar-header .dropdown p {
 }
 
 /* Main */
@@ -151,13 +153,21 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar-header li {
-    width: 24%;
-    bottom: 20px;
+  .navbar-header p.little-show {
+    display: inherit;
   }
 
-  .navbar-header li.nav-no-padding {
-    bottom: 0;
+  .navbar-header p.big-show {
+    display: none;
+  }
+
+  .navbar-header li {
+    width: 24%;
+  }
+
+  .navbar-header li.nav-first-element,
+  .navbar-header li.nav-fourth-element {
+    bottom: 20px;
   }
 }
 
