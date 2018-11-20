@@ -89,10 +89,8 @@ p {
   padding: 10px 0;
 }
 
-.navbar-header .nav-second-element p,
-.navbar-header .nav-third-element p,
-.navbar-header .nav-fourth-element p {
-  padding: 30px 0;
+.navbar-header li p {
+  padding: 15px 0;
 }
 
 .navbar-header p.little-show {
@@ -153,10 +151,6 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar-header p.little-show {
-    display: inherit;
-  }
-
   .navbar-header p.big-show {
     display: none;
   }
@@ -165,25 +159,14 @@ footer a:hover {
     width: 24%;
   }
 
-  .navbar-header li.nav-first-element,
-  .navbar-header li.nav-fourth-element {
-    bottom: 20px;
+  .navbar-header li a {
+    padding: 15px!important;
   }
 }
 
 @media only screen and (max-width: 623px) {
   .navbar-header li {
     width: 23%;
-  }
-}
-
-@media only screen and (max-width: 607px) {
-  .navbar-header li {
-    bottom: 0;
-  }
-
-  .navbar-header li.nav-more-padding {
-    bottom: 20px;
   }
 }
 
@@ -206,6 +189,5 @@ footer a:hover {
 
   .navbar-header li img {
     width: 100%;
-    padding-bottom: 10px;
   }
 }
