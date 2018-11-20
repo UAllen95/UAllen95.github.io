@@ -6,6 +6,11 @@
   </head>
   <body>
     <main>
+
+      <?php
+
+      ?>
+      
       <p>SEND E-MAIL</p>
       <form class="contact-form" action="contactform.php" method="post">
         <input type="text" name="name" placeholder="Full name">
