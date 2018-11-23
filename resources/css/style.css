@@ -97,6 +97,26 @@ p {
   display: none;
 }
 
+.navbar-header ul li.nav-fourth-element ul {
+  display: none;
+  position: absolute;
+  background-color: #AB1919;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.navbar-header ul li.nav-fourth-element:hover ul {
+  display: block;
+}
+
+.navbar-header ul li.nav-fourth-element ul li {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  font-size: 2rem;
+}
+
+
 /* Main */
 .jumbotron {
   background-color: #154854;
@@ -131,6 +151,12 @@ p {
 /* Web developer */
 .code-icon {
   width: 50%;
+}
+
+/* Contact */
+img.contact-icon {
+  width: 40%;
+  padding: 25px 0 35px 0;
 }
 
 /* Footer */
