@@ -97,6 +97,18 @@ p {
   display: none;
 }
 
+.navbar-header li.active-navbar-tab {
+  background-color: #154854;
+}
+
+.navbar-header li.active-navbar-tab a {
+  color: white;
+}
+
+.navbar-header li.active-navbar-tab a:hover {
+  color: #fff986!important;
+}
+
 .navbar-header ul li.nav-fourth-element ul {
   display: none;
   position: absolute;
@@ -113,9 +125,17 @@ p {
   width: 100%;
   border-radius: 4px;
   display: block;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
+.navbar-header ul li.nav-fourth-element li.inactive-language a {
+  padding-left: 40px;
+}
+
+.navbar-header ul li.nav-fourth-element li.active-language img {
+  height: 36px;
+  width: 40px;
+}
 
 /* Main */
 .jumbotron {
@@ -207,6 +227,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 550px) {
+  .navbar-header p.little-show {
+    display: none;
+  }
+
   .navbar-default .container-fluid {
     padding: 0
   }
