@@ -159,6 +159,10 @@ img.contact-icon {
   padding: 25px 0 35px 0;
 }
 
+.github-link p {
+  color: black;
+}
+
 /* Footer */
 footer {
   font-family: monospace;
@@ -176,11 +180,17 @@ footer a:hover {
   color: white;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1220px) {
   .navbar-header p.big-show {
     display: none;
   }
 
+  .navbar-header p.little-show {
+    display: inherit;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .navbar-header li {
     width: 24%;
   }
