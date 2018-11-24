@@ -29,21 +29,26 @@
             </a></li>
 
             <li class="nav-second-element"><a href="web_developer_de.html">
-              <img src="resources/images/icons/pie-chart-1.svg"/>
+              <img src="resources/images/icons/pie-chart.svg"/>
               <p>Web Entwicklung</p>
             </a></li>
 
-            <li class="nav-third-element"><a href="contact_de.html" class="red">
-              <img src="resources/images/icons/agreement.svg"/>
+            <li class="nav-third-element active-navbar-tab"><a href="contact_de.html" class="red">
+              <img src="resources/images/icons/agreement-reverse.svg"/>
               <p>Kontakt</p>
             </a></li>
 
             <li class="nav-fourth-element"><a href="#" class="red">
               <img src="resources/images/icons/settings.svg"/>
               <p>Sprache</p></a>
-              <ul>
-                <li><a class="text-center" href="index.html">Englisch</a></li>
-                <li><a class="text-center" href="index_de.html">Deutsch - Aktiviert</a></li>
+              <ul class="dropdown">
+                <li class="inactive-language first-language">
+                  <a class="text-center" href="index.html">EN</a>
+                </li>
+                <li class="active-language">
+                  <img src="resources/images/green_dot.png" alt="activated">
+                  <a class="text-center" href="index_de.html">DE</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -71,25 +76,24 @@
       <div class="container text-center">
         <div class="contact">
           <div class="row">
-            <br>
+            
             <h1>Kontakt</h1>
 
             <div class="col-md-4 col-sm-12 contact-container">
-              <h3>Telefon</h3>
+              <h2 class="yellow-background">Telefon</h2>
               <img src="resources/images/icons/phone-call.svg" class="contact-icon">
               <p>(+49)179 1013759</p>
             </div>
 
             <div class="col-md-4 col-sm-12 contact-container">
-              <h3>E-Mail</h3>
+              <h2 class="yellow-background">E-Mail</h2>
               <img src="resources/images/icons/close-envelope.svg" class="contact-icon">
-              <p>allenungureanu@gmail.com</p>
               <p>allenungureanu@yahoo.com</p>
             </div>
 
-            <div class="col-md-4 col-sm-12 contact-container">
-              <h3>GitHub</h3>
-              <a href="https://github.com/UAllen95" class="github-link">
+            <div class="col-md-4 col-sm-12 contact-container github-link">
+              <h2 class="yellow-background">GitHub</h2>
+              <a href="https://github.com/UAllen95">
                 <img src="resources/images/icons/github-logo.svg" class="contact-icon">
                 <p>UAllen95</p>
               </a>

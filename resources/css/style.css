@@ -128,6 +128,10 @@ p {
   font-size: 5rem;
 }
 
+.navbar-header ul li.nav-fourth-element ul li.first-language {
+  border-bottom: 5px solid black;
+}
+
 .navbar-header ul li.nav-fourth-element li.inactive-language a {
   padding-left: 40px;
 }
@@ -144,9 +148,6 @@ p {
   color: white;
 }
 
-.jumbotron .logo-container {
-  width: 40%;
-}
 
 .jumbotron .logo-container,
 .jumbotron .text-container,
@@ -154,6 +155,15 @@ p {
   float:none;
   display:inline-block;
   vertical-align:middle;
+}
+
+.jumbotron .logo-container {
+  width: 40%;
+  margin-right: 60px;
+}
+
+.jumbotron .text-container {
+  width: 500px;
 }
 
 /* SEO */
@@ -210,13 +220,37 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .contact-container {
+    border-bottom: 5px solid #154854;
+  }
+
+  .contact-container .github-link {
+    border-bottom: 0!important;
+  }
+
+  .contact-container p {
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 984px) {
+  .jumbotron .logo-container {
+    margin-right: 0;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .navbar-header li {
     width: 24%;
   }
 
   .navbar-header li a {
-    padding: 15px!important;
+    padding: 15px 15px 0 15px!important;
+  }
+
+  .navbar-header li p {
+    margin: 0;
   }
 }
 
@@ -239,6 +273,10 @@ footer a:hover {
     width: 20%;
   }
 
+  .navbar-header li a {
+    padding: 15px!important;
+  }
+
   .navbar-header li p {
     display: none;
   }
@@ -249,5 +287,14 @@ footer a:hover {
 
   .navbar-header li img {
     width: 100%;
+  }
+
+  .jumbotron .text-container {
+    width: auto;
+    max-width: 500px;
+  }
+
+  .jumbotron .text-container h1 {
+    font-size: 4rem;
   }
 }
