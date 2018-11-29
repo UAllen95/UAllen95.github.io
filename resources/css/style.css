@@ -194,26 +194,45 @@ p {
 }
 
 /* Web developer */
-.code-icon {
-  width: 50%;
-}
-
-.web-developer .row div {
+#web-developer .row div {
   margin-top: 20px;
 }
 
-.portofolio h3 {
+#technical-skills .code-icon {
+  width: 50%;
+}
+
+#portfolio a {
+  color: #154854;
+}
+
+#portfolio h3 {
   margin-bottom: 30px;
 }
 
 /* Contact */
-img.contact-icon {
+#contact .yellow-background {
+  height: 106px;
+  color: black;
+}
+
+#contact .skype .yellow-background,
+#contact .email .yellow-background,
+#contact .github .yellow-background {
+  padding-top: 36px;
+}
+
+#contact img.contact-icon {
   width: 40%;
   padding: 25px 0 35px 0;
 }
 
-.contact p {
-  color: black;
+#contact .github .yellow-background {
+  background-color: #AB1919;
+}
+
+#contact a {
+  color: #154854;
 }
 
 /* Footer */
@@ -243,8 +262,19 @@ footer a:hover {
     display: inherit;
   }
 
+@media only screen and (max-width: 1199px) {
   /* Contact */
-  .contact-container {
+  #contact .yellow-background {
+    height: auto;
+  }
+
+  #contact .skype .yellow-background,
+  #contact .email .yellow-background,
+  #contact .github .yellow-background {
+    padding: 20px;
+  }
+
+  #contact .contact-container {
     border-bottom: 5px solid #154854;
   }
 }
