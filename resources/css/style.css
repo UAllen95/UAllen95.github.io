@@ -252,6 +252,13 @@ footer a:hover {
   color: white;
 }
 
+@media only screen and (max-width: 1310px) and (min-width: 1220px) {
+  /* Navbar */
+  .navbar li.navbar-tab {
+    height: 207px;
+  }
+}
+
 @media only screen and (max-width: 1220px) {
   /* Navbar */
   .navbar-header p.big-show {
