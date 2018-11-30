@@ -18,13 +18,13 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <ul class="nav navbar-nav text-center">
 
-            <li class="nav-first-element navbar-tab active-navbar-tab"><a href="index_de.html">
-              <img src="resources/images/icons/line-chart-reverse.svg"/>
+            <li class="nav-first-element navbar-tab"><a href="index_de.html">
+              <img src="resources/images/icons/line-chart.svg"/>
               <p class="big-show">Suchmaschinenoptimierung</p>
               <p class="little-show">SEO</p>
             </a></li>
@@ -35,8 +35,8 @@
               <p class="little-show">WEB</p>
             </a></li>
 
-            <li class="nav-third-element navbar-tab"><a href="contact_de.html" class="red">
-              <img src="resources/images/icons/agreement.svg"/>
+            <li class="nav-third-element navbar-tab active-navbar-tab"><a href="contact_de.html" class="red">
+              <img src="resources/images/icons/agreement-reverse.svg"/>
               <p>Kontakt</p>
             </a></li>
 
@@ -62,40 +62,49 @@
     <section>
       <div class="jumbotron">
         <div class="container-fluid">
+
           <div class="logo-container">
             <img class="img-responsive" src="resources/images/logo_db.png" alt="logo"/>
           </div>
+
           <div class="text-container">
             <h1>Kontaktiere mich</h1>
           </div>
+
+          <div class="arrow-row">
+            <a class="smooth-scroll" href="#first-section">
+              <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
-    <section>
+    <section id="first-section">
       <div id="contact" class="container text-center">
         <div class="row">
 
-          <div class="col-lg-3 col-sm-6 contact-container skype">
+          <div class="col-lg-3 col-xs-6 contact-container skype">
             <h2 class="yellow-background">Skype</h2>
             <img src="resources/images/icons/skype.svg" class="contact-icon">
             <p>live:allenungureanu</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container telefon">
+          <div class="col-lg-3 col-xs-6 contact-container telefon">
             <h2 class="yellow-background">Telefon / WhatsApp</h2>
             <img src="resources/images/icons/phone-call.svg" class="contact-icon">
             <p>(+49)179 1013759</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container email">
+          <div class="col-lg-3 col-xs-6 contact-container email">
             <h2 class="yellow-background">E-Mail</h2>
-            <img src="resources/images/icons/close-envelope.svg" class="contact-icon">
+            <img src="resources/images/icons/at.svg" class="contact-icon">
             <p>allenungureanu@yahoo.com</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container github">
+          <div class="col-lg-3 col-xs-6 contact-container github">
             <h2 class="yellow-background red">GitHub (Link)</h2>
             <a href="https://github.com/UAllen95" target="_blank">
               <img src="resources/images/icons/github-logo.svg" class="contact-icon">
@@ -110,13 +119,20 @@
     <!-- Footer -->
     <footer>
       <div class="container">
+
+        <div class="text-right footer-arrow">
+          <a class="smooth-scroll" href="#navbar">
+            <img src="resources/images/icons/arrow-up.svg">
+          </a>
+        </div>
+
         <h5>Hausgemachte Webseite</h5>
-        <h5>Symbol von <a href="https://www.flaticon.com/authors/gregor-cresnar" target="Gregor Cresnar">Gregor Cresnar</a>,
-          <a href="https://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> und
+        <h5>Symbol von <a href="https://www.flaticon.com/authors/gregor-cresnar" target="Gregor Cresnar">Gregor Cresnar</a> und
           <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> von
           <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> ist lizenziert von
           <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. Leichte Bearbeitung von mir.
         </h5>
+
       </div>
     </footer>
 

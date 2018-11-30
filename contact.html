@@ -18,7 +18,7 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <ul class="nav navbar-nav text-center">
@@ -35,12 +35,12 @@
               <p class="little-show">WEB</p>
             </a></li>
 
-            <li class="nav-third-element navbar-tab active-navbar-tab"><a href="contact.html" class="red">
+            <li class="nav-third-element navbar-tab active-navbar-tab"><a href="contact.html">
               <img src="resources/images/icons/agreement-reverse.svg"/>
               <p>Contact</p>
             </a></li>
 
-            <li class="nav-fourth-element navbar-tab"><a href="#" class="red">
+            <li class="nav-fourth-element navbar-tab"><a href="#">
               <img src="resources/images/icons/settings.svg"/>
               <p>Language</p></a>
               <ul class="dropdown">
@@ -62,40 +62,49 @@
     <section>
       <div class="jumbotron">
         <div class="container-fluid">
+
           <div class="logo-container">
             <img class="img-responsive" src="resources/images/logo_db.png" alt="logo"/>
           </div>
+
           <div class="text-container">
             <h1>Contact me</h1>
           </div>
+
+          <div class="arrow-row">
+            <a class="smooth-scroll" href="#first-section">
+              <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- Contact section -->
-    <section>
+    <section id="first-section">
       <div id="contact" class="container text-center">
         <div class="row">
 
-          <div class="col-lg-3 col-sm-6 contact-container skype">
+          <div class="col-lg-3 col-xs-6 contact-container skype">
             <h2 class="yellow-background">Skype</h2>
             <img src="resources/images/icons/skype.svg" class="contact-icon">
             <p>live:allenungureanu</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container phone">
+          <div class="col-lg-3 col-xs-6 contact-container phone">
             <h2 class="yellow-background">Phone / WhatsApp</h2>
             <img src="resources/images/icons/phone-call.svg" class="contact-icon">
             <p>(+49)179 1013759</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container email">
+          <div class="col-lg-3 col-xs-6 contact-container email">
             <h2 class="yellow-background">E-Mail</h2>
-            <img src="resources/images/icons/close-envelope.svg" class="contact-icon">
+            <img src="resources/images/icons/at.svg" class="contact-icon">
             <p>allenungureanu@yahoo.com</p>
           </div>
 
-          <div class="col-lg-3 col-sm-6 contact-container github">
+          <div class="col-lg-3 col-xs-6 contact-container github">
             <h2 class="yellow-background">GitHub (link)</h2>
             <a href="https://github.com/UAllen95" target="_blank">
               <img src="resources/images/icons/github-logo.svg" class="contact-icon">
@@ -110,13 +119,20 @@
     <!-- Footer -->
     <footer>
       <div class="container">
+
+        <div class="text-right footer-arrow">
+          <a class="smooth-scroll" href="#navbar">
+            <img src="resources/images/icons/arrow-up.svg">
+          </a>
+        </div>
+
         <h5>Home-made website</h5>
-        <h5>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" target="Gregor Cresnar">Gregor Cresnar</a>,
-          <a href="https://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> and
+        <h5>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" target="Gregor Cresnar">Gregor Cresnar</a> and
           <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from
           <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
           <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. Light edited by me.
         </h5>
+
       </div>
     </footer>
 

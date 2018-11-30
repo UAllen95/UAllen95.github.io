@@ -18,19 +18,19 @@
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav id="navbar" class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <ul class="nav navbar-nav text-center">
 
-            <li class="nav-first-element navbar-tab active-navbar-tab"><a href="index_de.html">
-              <img src="resources/images/icons/line-chart-reverse.svg"/>
+            <li class="nav-first-element navbar-tab"><a href="index_de.html">
+              <img src="resources/images/icons/line-chart.svg"/>
               <p class="big-show">Suchmaschinenoptimierung</p>
               <p class="little-show">SEO</p>
             </a></li>
 
-            <li class="nav-second-element navbar-tab"><a href="web_developer_de.html">
-              <img src="resources/images/icons/pie-chart.svg"/>
+            <li class="nav-second-element navbar-tab active-navbar-tab"><a href="web_developer_de.html">
+              <img src="resources/images/icons/pie-chart-reverse.svg"/>
               <p class="big-show">Web Entwicklung</p>
               <p class="little-show">WEB</p>
             </a></li>
@@ -62,18 +62,27 @@
     <section>
       <div class="jumbotron">
         <div class="container-fluid">
+
           <div class="logo-container">
             <img class="img-responsive" src="resources/images/logo_db.png" alt="logo"/>
           </div>
+
           <div class="text-container">
             <h1>Front-End-Webentwicklung</h1>
           </div>
+
+          <div class="arrow-row">
+            <a class="smooth-scroll" href="#first-section">
+              <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
+            </a>
+          </div>
+
         </div>
       </div>
     </section>
 
     <!-- Web developer section -->
-    <section>
+    <section id="first-section">
       <div id="web-developer" class="container text-center">
 
         <!-- Technical skills -->
@@ -149,12 +158,20 @@
     <!-- Footer -->
     <footer>
       <div class="container">
+
+        <div class="text-right footer-arrow">
+          <a class="smooth-scroll" href="#navbar">
+            <img src="resources/images/icons/arrow-up.svg">
+          </a>
+        </div>
+
         <h5>Hausgemachte Webseite</h5>
         <h5>Symbol von
           <a href="https://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> von
           <a href="www.flaticon.com">www.flaticon.com</a> ist lizenziert von
           <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. Leichte Bearbeitung von mir.
         </h5>
+        
       </div>
     </footer>
 
