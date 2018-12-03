@@ -160,23 +160,26 @@ p {
 
 /* SEO */
 #seo marquee {
-  background-position: center;
   height: 66rem;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   color: white;
+  border-radius: 25px;
 }
 
-
 #seo marquee.first-steps {
-  background-image: url("../images/seo4.jpg");
+  background-image: url("../images/seo4.jpeg");
+  background-position: center;
 }
 
 #seo marquee.second-steps  {
-  background-image: url("../images/seo6.jpg");
+  background-image: url("../images/seo6.jpeg");
+  background-position: center;
 }
 
 #seo h1 {
-  margin: 60px;
+  margin: 50px 50px 10px 50px;
+  background-color: #fff986;
+  padding: 40px;
 }
 
 #seo li {
@@ -361,6 +364,16 @@ footer img {
   .navbar-header li {
     width: 23%;
   }
+
+  /* SEO */
+  #seo h1 {
+    margin: 30px 30px 7px 30px;
+    font-size: 3rem;
+  }
+
+  #seo li {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -409,6 +422,11 @@ footer img {
 }
 
 @media only screen and (max-width: 521px) {
+  /* SEO */
+  #seo h1 {
+    margin: 20px 20px 5px 20px;
+  }
+
   /* Contact */
   #contact .github .yellow-background {
     padding-top: 20px;
