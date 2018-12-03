@@ -54,6 +54,8 @@ p {
   background-color: #fff986;
   border: #fff986;
   border-bottom: 6px solid #AB1919;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   margin: 0;
   font-family: monospace;
 }
@@ -110,36 +112,18 @@ p {
   color: #fff986!important;
 }
 
-.navbar-header ul li.nav-fourth-element ul {
-  display: none;
+.navbar-header .nav-fourth-element img.switcher {
+  width: 20%;
   position: absolute;
-  background-color: #AB1919;
-  padding: 10px;
-  border-radius: 0px 0px 4px 4px;
+  top: 20%;
+  opacity: 0.5;
 }
 
-.navbar-header ul li.nav-fourth-element:hover ul {
-  display: block;
+.navbar-header .nav-fourth-element img:hover {
+  opacity: 1;
 }
 
-.navbar-header ul li.nav-fourth-element ul li {
-  width: 100%;
-  border-radius: 4px;
-  display: block;
-  font-size: 5rem;
-}
-
-.navbar-header ul li.nav-fourth-element ul li.first-language {
-  border-bottom: 5px solid black;
-}
-
-.navbar-header ul li.nav-fourth-element li img {
-  height: 36px;
-  width: 40px;
-  margin: 0 10px 3px 0;
-}
-
-/* Main */
+/* Jumbotron */
 .jumbotron {
   background-color: #154854;
   text-align: center;
@@ -192,10 +176,20 @@ p {
   font-style: italic;
   margin: 10px 0;
   font-family: 'Lato', sans-serif;
+  border-bottom: 5px solid darkgrey;
 }
 
 #seo .image-container {
   margin: 25px 0;
+}
+
+#seo img {
+  height: 100%;
+  width: 100%;
+}
+
+#seo .first-image {
+  margin-left: 15px;
 }
 
 /* Web developer */
@@ -366,19 +360,6 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 716px) {
-  /* Contact */
-  #contact .yellow-background {
-    height: 106px;
-  }
-
-  #contact .skype .yellow-background,
-  #contact .email .yellow-background,
-  #contact .github .yellow-background {
-    padding-top: 36px;
-  }
-}
-
 @media only screen and (max-width: 623px) {
   /* Navbar */
   .navbar-header li {
@@ -414,6 +395,10 @@ footer img {
 
   .navbar-header li img {
     width: 100%;
+  }
+
+  .navbar-header .nav-fourth-element img.switcher {
+    display: none;
   }
 
   /* Jumbotron */
