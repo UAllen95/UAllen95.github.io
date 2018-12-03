@@ -236,7 +236,7 @@ p {
 
 /* Footer */
 footer {
-  font-family: monospace;
+  font-family: 'Cutive Mono', monospace;
   background-color: #154854;
   color: white;
   padding: 20px;
@@ -245,6 +245,7 @@ footer {
 
 footer h5 {
   width: 80%;
+  font-size: 1.5rem;
 }
 
 footer a {
