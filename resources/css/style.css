@@ -159,37 +159,32 @@ p {
 }
 
 /* SEO */
-#seo .first-steps ul {
-  margin-top: 10px;
-  padding-top: 10px;
+#seo marquee {
+  background-position: center;
+  height: 66rem;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  color: white;
 }
 
-#seo .second-steps ul {
-  margin-top: 10px;
-  padding-top: 20px;
+
+#seo marquee.first-steps {
+  background-image: url("../images/seo4.jpg");
+}
+
+#seo marquee.second-steps  {
+  background-image: url("../images/seo6.jpg");
+}
+
+#seo h1 {
+  margin: 60px;
 }
 
 #seo li {
-  font-size: 2.3rem;
-  text-align: left;
+  font-size: 5rem;
   font-weight: bold;
   font-style: italic;
-  margin: 10px 0;
+  margin: 200px 50px;
   font-family: 'Lato', sans-serif;
-  border-bottom: 5px solid darkgrey;
-}
-
-#seo .image-container {
-  margin: 25px 0;
-}
-
-#seo img {
-  height: 100%;
-  width: 100%;
-}
-
-#seo .first-image {
-  margin-left: 15px;
 }
 
 /* Web developer */
