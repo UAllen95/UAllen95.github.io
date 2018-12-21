@@ -11,10 +11,6 @@ h1, h2 {
   font-family: 'Righteous', cursive;
 }
 
-h1 {
-  font-size: 5rem;
-}
-
 h2 {
   font-size: 3rem;
 }
@@ -34,7 +30,7 @@ p {
 
 .image-container img {
   opacity: 0.7;
-  transition: 0.5s, 0.5s;
+  transition: 0.75s, 0.75s;
 }
 
 .image-container img:hover {
@@ -158,12 +154,16 @@ p {
   bottom: 45px;
 }
 
+.jumbotron a {
+  padding: 70px 25px 25px 25px;
+}
+
 /* SEO */
 #seo marquee {
   height: 66rem;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   color: white;
-  border-radius: 25px;
+  border-radius: 0 0 25px 25px;
 }
 
 #seo marquee.first-steps {
@@ -180,6 +180,10 @@ p {
   margin: 50px 50px 10px 50px;
   background-color: #fff986;
   padding: 40px;
+}
+
+#seo h1.first-headline {
+  margin: 0 50px 10px 50px;
 }
 
 #seo li {
@@ -246,8 +250,9 @@ footer h5 {
   font-size: 1.5rem;
 }
 
-footer a {
+footer a.smooth-scroll{
   color: #fff986;
+  padding: 35px;
 }
 
 footer a:hover {
