@@ -1,0 +1,69 @@
+/* GENERAL */
+body {
+  background-color: black;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: black;
+  height: 110px;
+  margin: 0;
+  border: 0;
+  border-bottom: 5px solid white;
+}
+
+.navbar .navbar-header {
+  width: 100%;
+}
+
+.navbar a.navbar-brand {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navbar .navbar-brand img {
+  margin: 0 auto;
+}
+
+/* JUMBOTRON */
+#main .container {
+  background-image: url("../images/mission-background.jpg");
+  background-position: center;
+  height: 700px;
+}
+
+#main .main-text {
+  background-color: black;
+  margin: 27% -15px;
+}
+
+#main .main-text p {
+  padding: 10px;
+}
+
+/* TEA OF THE MONTH */
+#month .container {
+  padding: 20px 0;
+}
+
+#month img {
+  width: 90%;
+}
+
+/* LOCATIONS */
+#locations .container {
+  background-image: url("../images/locations-background.jpg");
+  background-position: center;
+  padding-bottom: 20px;
+}
+
+#locations h1 {
+  padding: 10px;
+}
+
+#locations .col-md-8 {
+  background-color: black;
+  padding-top: 20px;
+}

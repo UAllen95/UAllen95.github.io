@@ -18,31 +18,46 @@
 
   <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand back-to-index" href="../../web_developer.html#portfolio">
-            <img class="img-responsive navbar-left" src="resources/images/logo_y.png" alt="back-to-index"/>
-            <p class="navbar-text">Back to Index</p>
-          </a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Explore</a></li>
-          <li><a href="#">Start a project</a></li>
-          <li><a href="#">About us</a></li>
-        </ul>
-        <img class="navbar-brand navbar-right navbar-collapse collapse" src="resources/images/logo.png" alt="logo"/>
-      </div>
-    </nav>
+    <!-- HEADER -->
 
-    <!-- Jumbotron -->
-    <div class="carousel">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+  <!--      <div class="navbar-header">
+            <a class="navbar-brand back-to-index" href="../../index.html#portfolio">
+              <img class="img-responsive navbar-left" src="resources/images/logo_db.png" alt="back-to-index"/>
+              <p>Back to Index</p>
+            </a>
+          </div>-->
+
+          <ul class="nav navbar-nav navbar-text-tabs">
+            <li class="active"><a href="#">Explore</a></li>
+            <li><a href="#">Start a project</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-icon-tabs">
+            <li class="active"><a href="#"><img src="resources/images/explore.png" alt="explore"></a></li>
+            <li><a href="#"><img src="resources/images/start.png" alt="start a project"></a></li>
+            <li><a href="#"><img src="resources/images/about.png" alt="about us"></a></li>
+          </ul>
+
+          <div class="nav navbar-nav navbar-logo">
+            <img class="navbar-brand navbar-right navbar-collapse collapse" src="resources/images/logo.png" alt="logo"/>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- JUMBOTRON -->
+
+    <section class="carousel">
       <div class="jumbotron background-bike">
         <div class="container">
           <h1>GET GOING.</h1>
           <p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-          <a href="../../web_developer.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
+          <a href="../../index.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
         </div>
       </div>
 
@@ -50,7 +65,7 @@
         <div class="container">
           <h1>GET THINKING.</h1>
           <p>Meet like-minded individuals who will help fuel your creative juices.</p>
-          <a href="../../web_developer.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
+          <a href="../../index.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
         </div>
       </div>
 
@@ -58,7 +73,7 @@
         <div class="container">
           <h1>GET CREATING.</h1>
           <p>Stop overthinking projects and begin putting them out into the world.</p>
-          <a href="../../web_developer.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
+          <a href="../../index.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
         </div>
       </div>
 
@@ -66,25 +81,29 @@
         <div class="container">
           <h1>GET STARTED.</h1>
           <p>What are you waiting for? Today's the day for your next big idea.</p>
-          <a href="../../web_developer.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
+          <a href="../../index.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section class="main">
+    <section id="main">
+
       <div class="container">
-        <!-- Featured Project -->
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="featured">Featured project</h3>
+
+        <!-- FEATURED PROJECT -->
+
+        <div class="row featured">
+          <div class="col-md-12 featured-title">
+            <h3 class="title">Featured project</h3>
           </div>
+
           <div class="col-md-6 col-xs-12">
             <div class="image-container">
-              <a href="#"><img class="img-responsive" src="./resources/images/featured-project.png"></a>
+              <img class="img-responsive" src="./resources/images/featured-project.png">
             </div>
           </div>
 
-          <div class="col-md-3 col-xs-6">
+          <div class="documentary col-md-4 col-xs-7">
             <h4>DeFrost: A Documentary</h4>
             <p>by Leo De Firenze</p>
             <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story
@@ -92,7 +111,7 @@ about my mother's childhood. This film attempts to capture vignettes of her upbr
 eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
           </div>
 
-          <div class="col-md-3 col-xs-6">
+          <div class="product-categories col-md-2 col-xs-5">
             <h4 class="product">Product Categories</h4>
             <ul class="list">
               <li>Art</li>
@@ -113,54 +132,60 @@ eventual depature from a freezing valley in Northern Italy â€” through beau
               <li>Yoyos</li>
             </ul>
           </div>
+
         </div>
 
-        <!-- Projects -->
-        <div class="row">
+        <!-- PROJECTS -->
+
+        <div class="row projects">
           <div class="col-md-12 projects-title">
             <h3>Projects</h3>
           </div>
+
           <div class="col-md-4 col-xs-12">
             <div class="image-container">
-              <a href="#"><img class="img-responsive" src="./resources/images/project1.png"></a>
+              <img class="img-responsive" src="./resources/images/project1.png">
             </div>
-            <h4 class="project-item-title">The Right Tights</h4>
+            <h4>The Right Tights</h4>
             <p>by Riley Mae</p>
             <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more
-ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+  ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
           </div>
 
           <div class="col-md-4 col-xs-12">
             <div class="image-container">
-              <a href="#"><img class="img-responsive" src="./resources/images/project2.png"></a>
+              <img class="img-responsive" src="./resources/images/project2.png">
             </div>
-            <h4 class="project-item-title">Peppermint xsart Home</h4>
+            <h4>Peppermint xsart Home</h4>
             <p>by Brian McDonald</p>
             <p>Instantly upgrade your home with technology that keeps your family and home safe. We've
-made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+  made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
           </div>
 
           <div class="col-md-4 col-xs-12">
             <div class="image-container">
-              <a href="#"><img class="img-responsive" src="./resources/images/project3.png"></a>
+              <img class="img-responsive" src="./resources/images/project3.png">
             </div>
-            <h4 class="project-item-title">American Streetlife</h4>
+            <h4>American Streetlife</h4>
             <p>by Patrick Wallace</p>
             <p>I've been traveling around the United States for the past two years. I've slept
-on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+  on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
           </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Having trouble? -->
+    <!-- FOOTER -->
 
     <footer>
       <div class="container">
         <h2>Having trouble thinking of an idea?</h2>
         <p>Inventorsâ€™ block strikes at the worst times. But thatâ€™s all changed
 with Jumpstartâ€™s Good Idea Generator Lite (GIGLi).</p>
-        <a href="../../web_developer.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
+        <a href="../../index.html#portfolio" class="btn btn-primary btn-md">Back to Index</a>
       </div>
     </footer>
 

@@ -23,34 +23,24 @@
         <div class="navbar-header">
           <ul class="nav navbar-nav text-center">
 
-            <li class="nav-first-element navbar-tab active-navbar-tab"><a href="index.html">
-              <img src="resources/images/icons/line-chart-reverse.svg"/>
-              <p class="big-show">Search Engine Optimization</p>
-              <p class="little-show">SEO</p>
+            <li class="nav-index navbar-tab active-navbar-tab"><a href="index.html">
+              <p>Index</p>
             </a></li>
 
-            <li class="nav-second-element navbar-tab"><a href="web_developer.html">
-              <img src="resources/images/icons/pie-chart.svg"/>
-              <p class="big-show">Web Development</p>
-              <p class="little-show">WEB</p>
+            <li class="nav-aboutme navbar-tab"><a href="about.html">
+              <p>About me</p>
             </a></li>
 
-            <li class="nav-third-element navbar-tab"><a href="contact.html" class="red">
-              <img src="resources/images/icons/agreement.svg"/>
+            <li class="nav-contact navbar-tab"><a href="contact.html" class="red">
               <p>Contact</p>
             </a></li>
-
-            <li class="nav-fourth-element navbar-tab"><a href="index_de.html" class="red">
-              <img src="resources/images/icons/switch_en.png"/>
-              <p>Language</p></a>
-            </li>
 
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Main section -->
+    <!-- Jumbotron -->
     <section>
       <div class="jumbotron">
         <div class="container-fluid">
@@ -60,11 +50,11 @@
           </div>
 
           <div class="text-container">
-            <h1>Search Engine Optimization</h1>
+            <h1>Front-End Web Development</h1>
           </div>
 
           <div class="arrow-row">
-            <a class="smooth-scroll" href="#seo">
+            <a class="smooth-scroll" href="#first-section">
               <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
             </a>
           </div>
@@ -73,32 +63,78 @@
       </div>
     </section>
 
-    <!-- SEO section -->
-    <section>
-      <div id="seo" class="container-fluid text-center">
-        <h1 class="first-headline">Take your business to the next level by promoting it on different digital platforms.</h1>
+    <!-- Web developer section -->
 
-        <div class="container text-center">
-          <marquee class="first-steps text-center" direction="up">
-            <ul>
-              <li>Change the auto-generated pieces of information with the correct ones.</li>
-              <li>Remove bad reviews</li>
-              <li>Rank on Google Business.</li>
-              <li>Be the first in the list to be shown in your business category.</li>
-            </ul>
-          </marquee>
+      <!-- Technical skills -->
+    <section>
+      <div id="first-section" class="container-fluid text-center">
+
+        <h2 class="yellow-background container">Technical Skills</h2>
+
+        <div id="technical-skills" class="container text-center">
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive code-icon" src="resources/images/icon_html.png"/>
+            </div>
+            <h3>HTML5</h3>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive code-icon" src="resources/images/icon_css.png"/>
+            </div>
+            <h3>CSS3</h3>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive code-icon" src="resources/images/icon_js.png"/>
+            </div>
+            <h3>JavaScript</h3>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive code-icon" src="resources/images/icon_git.png"/>
+            </div>
+            <h3>Git</h3>
+          </div>
+
         </div>
 
-        <h1>Promote your website or create a new one with me.</h1>
+        <!-- Portfolio -->
+        <h2 class="yellow-background container">Portfolio</h2>
 
-        <div class="container text-center">
-          <marquee class="second-steps text-center" direction="up">
-            <ul>
-              <li>Create a website.</li>
-              <li>Link every bit of digital information to one another.</li>
-              <li>Get traffic.</li>
-            </ul>
-          </marquee>
+        <div id="portfolio" class="container text-center">
+
+          <div class="col-md-4 col-sm-12">
+            <a href="portofolio/jumpstart/index.html">
+              <div class="image-container">
+                <img class="img-responsive" src="resources/images/project_jumpstart.png"/>
+              </div>
+              <h3>Jumpstart project</h3>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <a href="portofolio/fotomatic/index.html">
+              <div class="image-container">
+                <img class="img-responsive" src="resources/images/project_fotomat.png"/>
+              </div>
+              <h3>Fotomatic project</h3>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <a href="portofolio/colmar_academy/index.html">
+              <div class="image-container">
+                <img class="img-responsive" src="resources/images/project_colmar.png"/>
+              </div>
+              <h3>Colmar-Academy project</h3>
+            </a>
+          </div>
+
         </div>
 
       </div>
@@ -115,11 +151,6 @@
         </div>
 
         <h5>Home-made website</h5>
-        <h5>Icon made by
-          <a href="https://www.flaticon.com/authors/gregor-cresnar">Gregor Cresnar</a> from
-          <a href="www.flaticon.com">www.flaticon.com</a> is licensed by
-          <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>. Light edited by me.
-        </h5>
 
       </div>
     </footer>
@@ -127,5 +158,6 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="resources/js/main.js" type="text/javascript"></script>
+
   </body>
 </html>

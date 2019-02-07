@@ -42,7 +42,8 @@ p {
 .yellow-background {
   background-color: #fff986;
   padding: 20px;
-  width: 100%;
+  margin: 0 7% 20px 7%;
+  width: 86%;
 }
 
 /* Navbar */
@@ -108,17 +109,6 @@ p {
   color: #fff986!important;
 }
 
-.navbar-header .nav-fourth-element img.switcher {
-  width: 20%;
-  position: absolute;
-  top: 20%;
-  opacity: 0.5;
-}
-
-.navbar-header .nav-fourth-element img:hover {
-  opacity: 1;
-}
-
 /* Jumbotron */
 .jumbotron {
   background-color: #154854;
@@ -158,45 +148,13 @@ p {
   padding: 70px 25px 25px 25px;
 }
 
-/* SEO */
-#seo marquee {
-  height: 66rem;
-  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-  color: white;
-  border-radius: 0 0 25px 25px;
-}
-
-#seo marquee.first-steps {
-  background-image: url("../images/seo4.jpeg");
-  background-position: center;
-}
-
-#seo marquee.second-steps  {
-  background-image: url("../images/seo6.jpeg");
-  background-position: center;
-}
-
-#seo h1 {
-  margin: 50px 50px 10px 50px;
-  background-color: #fff986;
-  padding: 40px;
-}
-
-#seo h1.first-headline {
-  margin: 0 50px 10px 50px;
-}
-
-#seo li {
-  font-size: 5rem;
-  font-weight: bold;
-  font-style: italic;
-  margin: 200px 50px;
-  font-family: 'Lato', sans-serif;
-}
-
 /* Web developer */
 #web-developer .row div {
   margin-top: 20px;
+}
+
+#technical-skills {
+  margin-bottom: 25px;
 }
 
 #technical-skills .code-icon {
@@ -224,7 +182,7 @@ p {
 }
 
 #contact img.contact-icon {
-  width: 40%;
+  width: 10%;
   padding: 25px 0 35px 0;
 }
 
@@ -250,44 +208,33 @@ footer h5 {
   font-size: 1.5rem;
 }
 
-footer a.smooth-scroll{
-  color: #fff986;
-  padding: 35px;
-}
-
-footer a:hover {
-  color: white;
-}
-
-footer a:focus {
-  color: #AB1919;
-}
-
-footer div.footer-arrow {
+footer .footer-arrow {
   height: 0;
 }
 
-footer img {
+footer .footer-arrow a {
+  color: #fff986;
+  padding: 25px;
+}
+
+footer .footer-arrow a:hover {
+  color: white;
+}
+
+footer .footer-arrow a:focus {
+  color: #AB1919;
+}
+
+footer .footer-arrow img {
   width: 5%;
-  margin-top: 5px;
+  margin-top: -10px;
 }
 
 @media only screen and (max-width: 1310px) and (min-width: 1220px) {
-  /* Navbar */
-  .navbar li.navbar-tab {
-    height: 207px;
-  }
 }
 
 @media only screen and (max-width: 1220px) {
-  /* Navbar */
-  .navbar-header p.big-show {
-    display: none;
-  }
-
-  .navbar-header p.little-show {
-    display: inherit;
-  }
+}
 
 @media only screen and (max-width: 1199px) {
   /* Contact */
@@ -312,13 +259,6 @@ footer img {
     margin: 0;
   }
 
-  /* SEO */
-  #seo .first-steps ul {
-    margin-top: 0;
-    padding-top: 0;
-  }
-}
-
   /* Contact */
   .contact-container p {
     padding-bottom: 20px;
@@ -326,6 +266,11 @@ footer img {
 }
 
 @media only screen and (max-width: 984px) {
+  /* Nav */
+  footer .footer-arrow img {
+    width: 8%;
+  }
+
   /* Jumbotron */
   .jumbotron .logo-container {
     margin-right: 0;
@@ -409,10 +354,6 @@ footer img {
 
   .navbar-header li img {
     width: 100%;
-  }
-
-  .navbar-header .nav-fourth-element img.switcher {
-    display: none;
   }
 
   /* Jumbotron */
