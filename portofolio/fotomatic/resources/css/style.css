@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 
@@ -55,12 +55,12 @@ header {
   z-index: 50;
   padding: 10px;
   width: 100%;
-  border-bottom: solid 1px #c6c1c1;
+  border-bottom: solid 3px black;
   background-color: white;
 }
 
 header img {
-  height: 30%;
+  height: 25px;
 }
 
 header .content {
@@ -72,10 +72,6 @@ header .content {
 header .logo {
   font-family: "Rubik", sans-serif;
   flex: 1;
-}
-
-header .logo img {
-  display: inline-block;
 }
 
 header .logo h2 {
@@ -273,7 +269,6 @@ footer {
 footer .content {
   color: white;
   display: flex;
-  font-size: 2.35rem;
 }
 
 footer .copyright {

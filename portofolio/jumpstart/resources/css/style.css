@@ -27,7 +27,7 @@ a.btn-primary {
   width: 20rem;
   padding: 1.3rem 0;
   margin-top: 2.8rem;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 a.btn-primary:hover {
@@ -55,47 +55,18 @@ a.btn-primary:active {
 
 /* HEADER */
 
-header .navbar-text-tabs a {
-   font-size: 1.5rem;
-}
-
-header .navbar-header {
-  background-color: #154854;
-  border-radius: 3px;
-}
-
-header .navbar-header p {
-  color: white;
-}
-
-header .navbar-icon-tabs {
-  display: none;
-}
-
-header .navbar-brand {
-  padding-top: 0;
-}
-
-header .navbar-brand img {
-  height: 140%;
-  margin-bottom: 5px;
-}
-
-header .navbar-default .navbar-nav {
-  font-size: 1.1rem;
+/* Header */
+header {
   font-weight: bold;
 }
 
-header .navbar-default .navbar-nav .active a,
-header .navbar-default .navbar-nav .active a:hover {
+header .navbar-nav a.active {
   color: #399bd1;
-  background-color: #f8f8f8;
 }
 
-header .navbar-logo {
-  float: right;
-  padding: 16px;
- }
+header .navbar-nav a.active:focus {
+  background-color: #e7e7e7;
+}
 
 /* JUMBOTRON */
 
@@ -106,7 +77,6 @@ header .navbar-logo {
   color: white;
   text-shadow: -1.2px -1.2px 0 #000, 1.2px -1.2px 0 #000, -1.2px 1.2px 0 #000, 1.2px 1.2px 0 #000;
   padding: 13.8rem 0;
-  margin-top: 50px;
 }
 
 .jumbotron p {
@@ -177,37 +147,28 @@ footer p {
   padding-top: 1.4rem;
 }
 
-@media only screen and (max-width: 1024) {
-  header .navbar-header {
-    padding: 5px;
-  }
-
-  header .navbar-brand img {
-    display: inline;
-  }
-
-  header .navbar-brand p {
-    display: inline;
-    padding-left: 25px;
-  }
-
+@media only screen and (max-width: 1024px) {
   header ul.navbar-nav {
     text-align: center;
-    padding: 0 5%;
+    display: inline-block;
+    float: none!important;
+    font-size: 1.7rem;
+    width: 100%;
+    margin: auto;
   }
 
   header ul.navbar-nav li {
-    display: inline-block;
-    width: 30%;
-    margin: 0;
+    width: 33%;
   }
 
-  header ul.navbar a {
-    display: inline;
+  header .navbar-brand {
+    display: none;
+    width: 100%;
+    border-top: 2px solid #e7e7e7;
   }
 
-  header .navbar-logo {
-    display: block;
+  header .navbar-brand img {
+    margin: 0 auto;
   }
 
   #main .row {
@@ -230,25 +191,21 @@ footer p {
   #main .projects img {
     margin: 20px auto;
   }
+
+  #main .featured-title .documentary h4 {
+    color: red;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
+  header ul.navbar-nav li {
+    display: inline-block;
+    width: 32%;
+    padding: 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar ul.navbar-text-tabs {
-    display: none;
-  }
-
-  .navbar ul.navbar-icon-tabs {
-    display: inline-block;
-  }
-
-  .navbar ul.navbar-icon-tabs img {
-    width: 50%;
-  }
-
   footer {
     padding: 10px 0;
   }
