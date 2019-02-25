@@ -148,6 +148,29 @@ footer p {
 }
 
 @media only screen and (max-width: 1024px) {
+  h3 {
+    font-size: 4rem;
+    padding: 20px 0 40px 0!important;
+  }
+
+  h4 {
+    font-size: 2.8rem;
+  }
+
+  p {
+    font-size: 2.3rem;
+  }
+
+  li {
+    font-size: 2.15rem;
+  }
+
+  a.btn {
+    font-size: 3.2rem;
+    padding: 30px;
+    width: auto;
+  }
+
   header ul.navbar-nav {
     text-align: center;
     display: inline-block;
@@ -159,6 +182,8 @@ footer p {
 
   header ul.navbar-nav li {
     width: 33%;
+    padding: 20px;
+    font-size: 2.5rem;
   }
 
   header .navbar-brand {
@@ -171,6 +196,23 @@ footer p {
     margin: 0 auto;
   }
 
+  .carousel {
+    top: 96px;
+  }
+
+  .jumbotron {
+    min-height: 861px;
+  }
+
+  .jumbotron p {
+    font-size: 3.5rem;
+    height: auto;
+  }
+
+  #main {
+    padding-top: 96px;
+  }
+
   #main .row {
     text-align: center;
   }
@@ -179,7 +221,7 @@ footer p {
     text-align: right;
   }
 
-  #main .documentary{
+  #main .documentary {
     padding: 20px;
   }
 
@@ -192,16 +234,14 @@ footer p {
     margin: 20px auto;
   }
 
-  #main .featured-title .documentary h4 {
-    color: red;
+  #main p {
+    padding-bottom: 10px;
   }
-}
 
 @media only screen and (max-width: 768px) {
   header ul.navbar-nav li {
     display: inline-block;
     width: 32%;
-    padding: 20px;
   }
 }
 
