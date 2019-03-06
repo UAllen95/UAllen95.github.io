@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 
@@ -75,7 +75,11 @@ header .logo {
 }
 
 header .logo h2 {
+  color: #4a4a4a;
   display: inline-block;
+  position: relative;
+  top: -4px;
+  right: 3px;
 }
 
 header nav ul {
@@ -90,6 +94,7 @@ nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
+  color: #4a4a4a;
 }
 
 header .icon {
@@ -107,7 +112,7 @@ header .tablet {
 
 .main-content {
   position: relative;
-  top: 57px;
+  top: 51px;
 }
 
 #features {

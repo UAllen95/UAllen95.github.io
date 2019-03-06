@@ -1,7 +1,15 @@
 /* GENERAL */
 body {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
   background-color: black;
   color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 /* NAVBAR */
@@ -10,11 +18,11 @@ body {
   height: 110px;
   margin: 0;
   border: 0;
-  border-bottom: 5px solid white;
 }
 
 .navbar .navbar-header {
   width: 100%;
+  margin: auto 0;
 }
 
 .navbar a.navbar-brand {
@@ -28,15 +36,17 @@ body {
 }
 
 /* JUMBOTRON */
-#main .container {
+#main .jumbotron {
   background-image: url("../images/mission-background.jpg");
+  background-size: cover;
   background-position: center;
-  height: 700px;
+  height: auto ;
 }
 
 #main .main-text {
   background-color: black;
-  margin: 27% -15px;
+  padding: 25px;
+  margin: 16rem -15px;
 }
 
 #main .main-text p {
@@ -52,6 +62,10 @@ body {
   width: 90%;
 }
 
+#month p {
+  padding: 10px 0 20px;
+}
+
 /* LOCATIONS */
 #locations .container {
   background-image: url("../images/locations-background.jpg");
@@ -63,7 +77,10 @@ body {
   padding: 10px;
 }
 
-#locations .col-md-8 {
+#locations .col-sm-8 {
   background-color: black;
-  padding-top: 20px;
+  padding: 20px;
+  margin: 20px;
+  line-height: 2;
+  min-height: 220px;
 }
