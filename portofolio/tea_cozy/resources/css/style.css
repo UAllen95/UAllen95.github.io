@@ -1,9 +1,12 @@
 /* GENERAL */
+
 body {
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
   font-family: "Helvetica", sans-serif;
   background-color: black;
+  opacity: 0.9;
   color: white;
   overflow-x: hidden;
 }
@@ -13,74 +16,112 @@ h1 {
 }
 
 /* NAVBAR */
-.navbar {
+
+header .navbar {
   background-color: black;
-  height: 110px;
+  height: 69px;
+  border-bottom: 2px solid seashell;
   margin: 0;
-  border: 0;
 }
 
-.navbar .navbar-header {
-  width: 100%;
-  margin: auto 0;
-}
-
-.navbar a.navbar-brand {
-  width: 100%;
+header .navbar .container-fluid {
   height: 100%;
-  margin: 0 auto;
 }
 
-.navbar .navbar-brand img {
-  margin: 0 auto;
+header .navbar .navbar-header {
+  width: 300px;
+  height: 69px;
+}
+
+header .navbar .navbar-header a.navbar-brand {
+  padding: 0;
+  margin: 3% 20%;
+}
+
+header .navbar .navbar-header img {
+  height: 50px;
+}
+
+header .navbar .navbar-right {
+  margin: 0.85% 5%;
+}
+
+header .navbar .navbar-right a {
+  color: white;
 }
 
 /* JUMBOTRON */
+
 #main .jumbotron {
   background-image: url("../images/mission-background.jpg");
   background-size: cover;
   background-position: center;
-  height: auto ;
+  height: auto;
+  margin-top: 69px;
 }
 
 #main .main-text {
   background-color: black;
   padding: 25px;
-  margin: 16rem -15px;
+  margin: 24rem -15px;
+}
+
+#main .main-text h1 {
+  font-size: 5rem;
+  margin: 0;
 }
 
 #main .main-text p {
-  padding: 10px;
+  padding: 10px 0 0;
+  margin: 0;
 }
 
-/* TEA OF THE MONTH */
-#month .container {
+/* FEATURED */
+
+#featured .container {
   padding: 20px 0;
 }
 
-#month img {
+#featured img {
   width: 90%;
 }
 
-#month p {
+#featured p {
   padding: 10px 0 20px;
 }
 
 /* LOCATIONS */
+
 #locations .container {
+  font-size: 1.5rem;
   background-image: url("../images/locations-background.jpg");
   background-position: center;
-  padding-bottom: 20px;
+  padding: 0 0 120px;
 }
 
 #locations h1 {
-  padding: 10px;
+  padding: 20px;
 }
 
 #locations .col-sm-8 {
   background-color: black;
   padding: 20px;
-  margin: 20px;
   line-height: 2;
-  min-height: 220px;
+}
+
+/* CONTACT */
+
+#contact h1 {
+  padding: 20px;
+}
+
+#contact .phone {
+  padding: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
