@@ -7,7 +7,7 @@ body {
   font-family: "Helvetica", sans-serif;
   background-color: black;
   opacity: 0.9;
-  color: white;
+  color: seashell;
   overflow-x: hidden;
 }
 
@@ -47,7 +47,11 @@ header .navbar .navbar-right {
 }
 
 header .navbar .navbar-right a {
-  color: white;
+  color: seashell;
+}
+
+header .navbar.navbar-white {
+  display: none;
 }
 
 /* JUMBOTRON */
@@ -124,4 +128,47 @@ header .navbar .navbar-right a {
 footer {
   text-align: left;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .navbar {
+    height: auto;
+  }
+
+  header .navbar.navbar-black {
+    height: 122px;
+    border: 0;
+  }
+
+  header .navbar .navbar-header {
+    width: 100%;
+    height: auto;
+    margin: 0!important;
+  }
+
+  header .navbar .navbar-header a {
+    height: auto;
+    width: 100%;
+    margin: 0!important;
+  }
+
+  header .navbar .navbar-header img {
+    width: auto;
+    height: auto;
+    margin: 19px auto;
+  }
+
+  header .navbar .navbar-right {
+    display: none;
+  }
+
+  header .navbar.navbar-white {
+    background-color: seashell;
+    display: block;
+    top: 122px;
+  }
+
+  header .navbar.navbar-white img {
+    height: 4rem;
+  }
 }

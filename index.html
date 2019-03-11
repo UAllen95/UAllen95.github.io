@@ -3,7 +3,7 @@
   <head>
     <title>Allen Ungureanu - Front-End Web Developer</title>
 
-    <link rel="icon" href="fav.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Righteous|Cutive+Mono" rel="stylesheet">
 
@@ -12,114 +12,139 @@
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="text-center">
 
-    <!-- Navbar -->
-    
-    <nav id="navbar" class="navbar navbar-default">
+    <!-- HEADER -->
+
+    <header id="header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Allen Ungureanu: Web Developer</a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <!-- desktop -->
+            <ul class="nav navbar-nav navbar-right desktop">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sections <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#technical-skills">Technical Skills</a></li>
+                  <li><a href="#portfolio">Porfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- phone -->
+            <ul class="nav navbar-nav navbar-right phone">
+              <ul>
+                <li><a href="#technical-skills">Technical Skills</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <!-- JUMBOTRON -->
+
+    <div class="jumbotron">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <ul class="nav navbar-nav text-center">
 
-            <li class="nav-index navbar-tab active-navbar-tab"><a href="index.html">
-              <p>Index</p>
-            </a></li>
-
-            <li class="nav-contact navbar-tab"><a href="contact.html" class="red">
-              <p>Contact</p>
-            </a></li>
-
-          </ul>
+        <div class="logo-container">
+          <img class="img-responsive" src="resources/images/logo_db.png" alt="logo"/>
         </div>
-      </div>
-    </nav>
 
-    <!-- Jumbotron -->
-
-    <section>
-      <div class="jumbotron">
-        <div class="container-fluid">
-
-          <div class="logo-container">
-            <img class="img-responsive" src="resources/images/logo_db.png" alt="logo"/>
-          </div>
-
-          <div class="text-container">
-            <h1>Front-End Web Development</h1>
-          </div>
-
-          <div class="arrow-row">
-            <a class="smooth-scroll" href="#first-section">
-              <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
-            </a>
-          </div>
-
+        <div class="text-container">
+          <h1>Front-End Web Development</h1>
         </div>
+
+        <div class="arrow-row">
+          <a class="smooth-scroll" href="#technical-skills">
+            <img src="resources/images/icons/arrow-down.svg" class="arrow-down">
+          </a>
+        </div>
+
       </div>
-    </section>
+    </div>
 
-    <!-- Web developer section -->
+    <!-- TECHNICAL SKILLS -->
 
-      <!-- Technical skills -->
+    <section id="technical-skills">
 
-    <section>
-      <div id="first-section" class="container-fluid text-center">
+      <div class="container-fluid">
+        <h2 class="yellow-background">Technical Skills</h2>
 
-        <h2 class="yellow-background container">Technical Skills</h2>
-
-        <div id="technical-skills" class="container text-center">
-
-          <div class="col-md-4 col-sm-6 col-xs-6">
+        <div class="container">
+          <div class="col-sm-4 col-xs-6">
             <div class="icon-container">
-              <img class="img-responsive code-icon" src="resources/images/icon_html.png"/>
+              <img class="img-responsive" src="resources/images/icon_html.png"/>
             </div>
             <h3>HTML5</h3>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="icon-container">
-              <img class="img-responsive code-icon" src="resources/images/icon_css.png"/>
+              <img class="img-responsive" src="resources/images/icon_css.png"/>
             </div>
             <h3>CSS3</h3>
-          </div>.
-
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <div class="icon-container">
-              <img class="img-responsive code-icon" src=""/>
-            </div>
-            <h3>Bootstrap</h3>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="icon-container">
-              <img class="img-responsive code-icon" src="resources/images/icon_js.png"/>
+              <img class="img-responsive" src="resources/images/icon_js.png"/>
             </div>
             <h3>JavaScript</h3>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="col-sm-4 col-xs-6">
             <div class="icon-container">
-              <img class="img-responsive code-icon" src=""/>
+              <img class="img-responsive" src="resources/images/icon_git.png"/>
+            </div>
+            <h3>Git</h3>
+          </div>
+
+          <div class="col-sm-4 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive" src="resources/images/icon_bootstrap.png"/>
+            </div>
+            <h3>Bootstrap</h3>
+          </div>
+
+          <div class="col-sm-4 col-xs-6">
+            <div class="icon-container">
+              <img class="img-responsive code-icon" src="resources/images/icon_jQuery.png"/>
             </div>
             <h3>jQuery</h3>
           </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <div class="icon-container">
-              <img class="img-responsive code-icon" src="resources/images/icon_git.png"/>
-            </div>
-            <h3>GIT</h3>
-          </div>
-
         </div>
 
-        <!-- Portfolio -->
+      </div>
 
-        <h2 class="yellow-background container">Portfolio</h2>
+    </section>
 
-        <div id="portfolio" class="container text-center">
+    <!-- PORFOLIO -->
 
-          <div class="col-md-4 col-sm-12">
+    <section id="portfolio">
+
+      <div class="container-fluid">
+        <h2 class="yellow-background">Portfolio</h2>
+
+        <div class="container">
+          <div class="col-sm-4 col-xs-12">
             <a href="portofolio/tea_cozy/index.html" target="_blank">
               <div class="image-container">
                 <img class="img-responsive" src="resources/images/project_tea_cozy.png"/>
@@ -128,7 +153,7 @@
             </a>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-sm-4 col-xs-12">
             <a href="portofolio/jumpstart/index.html" target="_blank">
               <div class="image-container">
                 <img class="img-responsive" src="resources/images/project_jumpstart.png"/>
@@ -137,7 +162,7 @@
             </a>
           </div>
 
-          <div class="col-md-4 col-sm-12">
+          <div class="col-sm-4 col-xs-12">
             <a href="portofolio/fotomatic/index.html" target="_blank">
               <div class="image-container">
                 <img class="img-responsive" src="resources/images/project_fotomat.png"/>
@@ -145,19 +170,44 @@
               <h3>Fotomatic project</h3>
             </a>
           </div>
-
         </div>
 
       </div>
+
     </section>
 
-    <!-- Footer -->
+    <!-- CONTACT -->
 
-    <footer>
+    <section id="contact">
+
+      <div class="container-fluid">
+        <h2 class="yellow-background">Contact</h2>
+
+        <div class="container">
+          <div class="col-sm-6 col-xs-12 email">
+            <img src="resources/images/icons/at.svg">
+            <p>allenungureanu@gmail.com</p>
+          </div>
+
+          <div class="col-sm-6 col-xs-12">
+            <a href="https://github.com/UAllen95" target="_blank">
+              <img src="resources/images/icons/github-logo.svg">
+              <p>Source-code</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="text-left">
       <div class="container">
 
         <div class="text-right footer-arrow">
-          <a class="smooth-scroll" href="#navbar">
+          <a class="smooth-scroll" href="#header">
             <img src="resources/images/icons/arrow-up.svg">
           </a>
         </div>
@@ -167,8 +217,10 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- SCRIPTS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="resources/js/main.js" type="text/javascript"></script>
 
   </body>
