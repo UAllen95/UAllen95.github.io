@@ -41,15 +41,16 @@ p {
 /* General - Backgrounds */
 .yellow-background {
   background-color: #fff986;
+  background-image: linear-gradient(to left, #154854, #fff986, #154854);
   padding: 20px;
   margin: 0 3% 30px 3%;
 }
 
 /* Navbar */
 header .navbar-default {
-  background-color: #fff986;
+  background-color: white;
   border: 0;
-  border-bottom: 5px solid darkred;
+  border-bottom: 5px solid #fff986;
   border-radius: 0;
   margin: 0;
 }
@@ -144,6 +145,35 @@ section {
 }
 
 /* Contact */
+
+#contact .source p {
+  font-size: 1.675rem;
+  text-align: right;
+  padding-right: 25px;
+}
+
+#contact .email p {
+  font-size: 2.2rem;
+}
+
+#contact p.tip {
+  font-size: 3rem;
+}
+
+#contact p.data {
+  font-style: italic;
+  font-size: 2.5rem;
+  background-color: #154854;
+  background-image: linear-gradient(to left, #fff986, #154854, #fff986);
+  width: fit-content;
+  padding: 20px;
+  border: 5px solid white;
+  margin: 10px auto;
+  border-radius: 20px;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 0 #000;
+  color: white;
+}
+
 #contact img {
   width: 10%;
   padding: 5px 0;
@@ -155,6 +185,14 @@ section {
 
 #contact a {
   color: #154854;
+}
+
+#contact form {
+  margin-top: 4px;
+}
+
+#contact input {
+  width: 381px;
 }
 
 /* Footer */
@@ -219,22 +257,13 @@ footer h5 {
     padding: 10px;
   }
 
-  #contact .email img {
-    display: inline-block;
-  }
-
-  #contact .email p {
-    display: inline-block;
-    padding: 10px;
-  }
-
   .jumbotron .text-container {
     width: auto;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  h3 {
+  #technical-skills h3 {
     font-size: 1.8rem;
   }
 
