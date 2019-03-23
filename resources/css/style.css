@@ -19,6 +19,11 @@ h3 {
   margin: 5px 0 20px;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 p {
   font-size: 2rem;
 }
@@ -61,6 +66,7 @@ header .navbar-header .navbar-brand {
 
 header .navbar-header button {
   background-color: #154854;
+
 }
 
 header .navbar-header .navbar-toggle:focus {
@@ -72,7 +78,7 @@ header .navbar-collapse {
 }
 
 header .navbar-collapse.in {
-  border-top: 3px solid darkorange!important;
+  border-top: 3px solid #154854!important;
 }
 
 header .navbar-collapse .dropdown .dropdown-toggle {
@@ -138,53 +144,46 @@ section {
   width: 20%;
 }
 
-
 /* Portfolio */
 #portfolio a {
   color: #154854;
 }
 
+#portfolio h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 0 0 15px 0;
+}
+
+#portfolio .pre-portfolio {
+  padding: 0;
+}
+
+#portfolio .portfolio-box {
+  padding: 0;
+  border: 15px solid #154854;
+  border-radius: 20px;
+}
+
 /* Contact */
 
-#contact .source p {
-  font-size: 1.675rem;
-  text-align: right;
-  padding-right: 25px;
+#contact .container {
+  width: 100%;
+  margin: 40px 0;
 }
 
-#contact .email p {
-  font-size: 2.2rem;
+#contact p {
+  margin: 0;
 }
 
-#contact p.tip {
-  font-size: 3rem;
-}
-
-#contact p.data {
-  font-style: italic;
-  font-size: 2.5rem;
-  background-color: #154854;
-  background-image: linear-gradient(to left, #fff986, #154854, #fff986);
-  width: fit-content;
-  padding: 20px;
-  border: 5px solid white;
-  margin: 10px auto;
-  border-radius: 20px;
-  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 0 #000;
-  color: white;
+#contact a {
+  color: #154854;
 }
 
 #contact img {
   width: 10%;
   padding: 5px 0;
-}
-
-#contact .github .yellow-background {
-  background-color: #AB1919;
-}
-
-#contact a {
-  color: #154854;
 }
 
 #contact form {
@@ -195,29 +194,88 @@ section {
   width: 381px;
 }
 
+#contact .email p {
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
+#contact p.tip {
+  font-size: 3rem;
+}
+
+#contact p.data {
+  font-style: italic;
+  font-size: 2.5rem;
+  background-color: #154854;
+  color: white;
+  text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 0 #000;
+  width: fit-content;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+#contact .others li {
+  list-style-type: ;
+}
+
 /* Footer */
 footer {
   font-family: 'Cutive Mono', monospace;
+  font-weight: normal;
   background-color: #154854;
   color: white;
   padding: 20px;
 }
 
-footer .footer-arrow {
-  height: 0;
+footer h5 {
+  font-size: 1.5rem;
 }
 
-footer .footer-arrow a {
+footer li {
+  margin-top: 10px;
+}
+
+footer .text-left a {
+  color: #fff986;
+}
+
+footer .text-right a {
+  color: #fff986;
+}
+
+footer .arrow a {
   padding: 25px;
 }
 
-footer .footer-arrow img {
-  width: 5%;
-  margin-top: -10px;
+footer .arrow img {
+  width: 40%;
 }
 
-footer h5 {
-  font-size: 1.5rem;
+footer .tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  h3 {
+    font-size: 3rem;
+  }
+
+  header a.navbar-brand {
+    font-size: 2.5rem;
+    height: auto;
+    line-height: 2;
+  }
+
+  header a.dropdown-toggle {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+
+  footer {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -238,10 +296,6 @@ footer h5 {
     position: relative;
     top: 20px;
   }
-
-  footer .footer-arrow img {
-    width: 7%;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -253,25 +307,50 @@ footer h5 {
     display: block;
   }
 
-  #contact .col-sm-6 {
-    padding: 10px;
-  }
-
   .jumbotron .text-container {
     width: auto;
+  }
+
+  footer .arrow img {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #technical-skills h3 {
-    font-size: 1.8rem;
-  }
-
   p {
     font-size: 1.5rem;
   }
 
-  #contact img {
-    width: 20%;
+  header a.navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  #technical-skills h3 {
+    font-size: 1.8rem;
+  }
+
+  #portfolio .pre-portfolio {
+    margin: 5px 0;
+  }
+
+  #contact p.tip {
+    font-size: 1.8rem;
+  }
+
+  #contact p.data {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  footer .desktop {
+    display: none;
+  }
+
+  footer .tablet {
+    display: block;
+  }
+
+  footer .tablet li {
+    font-size: 1.5rem;
   }
 }
