@@ -47,6 +47,7 @@ p {
 .yellow-background {
   background-color: #fff986;
   background-image: linear-gradient(to left, #154854, #fff986, #154854);
+  border-radius: 10px;
   padding: 20px;
   margin: 0 3% 30px 3%;
 }
@@ -78,25 +79,24 @@ header .navbar-collapse {
 }
 
 header .navbar-collapse.in {
-  border-top: 3px solid #154854!important;
 }
 
 header .navbar-collapse .dropdown .dropdown-toggle {
   color: #154854;
 }
 
+header .divider {
+  display: none;
+}
+
 header .navbar-collapse .phone {
   display: none;
-  text-align: right;
+  text-align: center;
 }
 
 header .navbar-collapse .phone li {
   display: inline-block;
   padding: 5px 15px;
-}
-
-header .navbar-collapse .phone a {
-  color: #154854;
 }
 
 /* Jumbotron */
@@ -134,21 +134,20 @@ header .navbar-collapse .phone a {
 
 /* Sections */
 section {
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
 /* Technical-skills */
+#technical-skills .section {
+  margin: 10px 0;
+}
+
 #technical-skills img {
   display: inline-block;
   vertical-align: middle;
-  width: 20%;
 }
 
 /* Portfolio */
-#portfolio a {
-  color: #154854;
-}
-
 #portfolio h3 {
   font-size: 2rem;
   font-weight: bold;
@@ -156,21 +155,29 @@ section {
   margin: 0 0 15px 0;
 }
 
+#portfolio a {
+  color: #154854;
+}
+
 #portfolio .pre-portfolio {
   padding: 0;
 }
 
 #portfolio .portfolio-box {
+  background-color: #154854;
   padding: 0;
-  border: 15px solid #154854;
-  border-radius: 20px;
+  border: 7px solid #154854;
+  border-radius: 7px;
+  box-shadow: 7px 6.75px 18px 11px #fff986;
+}
+
+#portfolio .portfolio-box h3 {
+  color: white;
 }
 
 /* Contact */
 
 #contact .container {
-  width: 100%;
-  margin: 40px 0;
 }
 
 #contact p {
@@ -211,7 +218,8 @@ section {
   text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 0 #000;
   width: fit-content;
   padding: 20px;
-  border: 5px solid white;
+  border: 2px solid white;
+  box-shadow: 7px 6.75px 18px 11px #fff986;
   border-radius: 20px;
   margin-left: 15px;
 }
@@ -257,30 +265,18 @@ footer .tablet {
   display: none;
 }
 
-@media only screen and (max-width: 1440px) {
-  h3 {
-    font-size: 3rem;
-  }
-
-  header a.navbar-brand {
-    font-size: 2.5rem;
-    height: auto;
-    line-height: 2;
-  }
-
-  header a.dropdown-toggle {
-    font-size: 2.5rem;
-    line-height: 2;
-  }
-
-  footer {
-    font-size: 2.5rem;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   h3 {
     font-weight: normal;
+  }
+
+  header a.smooth-scroll {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  header .divider {
+    display: block;
   }
 
   .jumbotron .logo-container {
@@ -295,6 +291,10 @@ footer .tablet {
     width: 7%;
     position: relative;
     top: 20px;
+  }
+
+  #portfolio .pre-portfolio {
+    margin: 17.5px 0;
   }
 }
 
@@ -329,17 +329,13 @@ footer .tablet {
     font-size: 1.8rem;
   }
 
-  #portfolio .pre-portfolio {
-    margin: 5px 0;
-  }
-
   #contact p.tip {
     font-size: 1.8rem;
   }
 
   #contact p.data {
     font-size: 1.5rem;
-    margin: 0;
+    margin: 10px 0 0;
   }
 
   footer .desktop {

@@ -2,7 +2,9 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <title>Tea Cozy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" href="favicon.ico">
 
@@ -15,49 +17,32 @@
 
   <!-- HEADER -->
 
-  <header>  <!-- Header comes over sections - Check with JS/jQ -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-black">
+  <header>
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-            <img src="resources/images/logo.png" alt="Brand">
+            <img alt="Brand" src="resources/images/logo.png">
           </a>
         </div>
 
-    <!-- DESKTOP -->
-
-        <ul class="nav navbar-nav navbar-right">
-          <li role="presentation"><a href="#main">Mission</a></li>
-          <li role="presentation"><a href="#featured">Featured Tea</a></li>
-          <li role="presentation"><a href="#locations">Locations</a></li>
-        </ul>
-
-      </div>
-    </nav>
-
-    <!-- TABLET -->
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-white">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img src="resources/images/hamburger.png" alt="Brand">
-          </a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#featured">Featured Tea</a></li>
+            <li><a href="#locations">Locations</a></li>
         </div>
-
       </div>
     </nav>
   </header>
 
-  <!-- JUMBOTRON -->
+  <!-- MISSION -->
 
-  <section id="main">
-    <div class="jumbotron">
-      <div class="main-text text-center">
-        <h1>Our mission</h1>
-        <p>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</p>
+  <section id="mission">
+    <div class="container-fluid">
+      <div class="black-background">
+        <h2>Our mission</h2>
+        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
       </div>
     </div>
   </section>
@@ -65,33 +50,33 @@
   <!-- FEATURED -->
 
   <section id="featured">
-    <div class="container text-center">
-      <h1>Tea of the Month</h1>
-      <p>What's Steeping at The Tea Cozy?</p>
+    <div class="container">
+      <h2>Tea of the Month</h2>
+      <h4>What's Steeping at The Tea Cozy?</h4>
 
         <div class="col-sm-4">
           <img src="resources/images/berryblitz.jpg" alt="">
-          <p>Fall Berry Blitz Tea</p>
+          <h4>Fall Berry Blitz Tea</h4>
         </div>
 
         <div class="col-sm-4">
           <img src="resources/images/spiced-rum.jpg" alt="">
-          <p>Spiced Rum Tea</p>
+          <h4>Spiced Rum Tea</h4>
         </div>
 
         <div class="col-sm-4">
           <img src="resources/images/donut.jpg" alt="">
-          <p>Seasonal Donuts</p>
+          <h4>Seasonal Donuts</h4>
         </div>
 
         <div class="col-sm-4 col-sm-offset-2">
           <img src="resources/images/myrtle-ave.jpg" alt="">
-          <p>Myrtle Ave Tea</p>
+          <h4>Myrtle Ave Tea</h4>
         </div>
 
         <div class="col-sm-4">
           <img src="resources/images/bedford-bizarre.jpg" alt="">
-          <p>Bedford Bizarre Tea</p>
+          <h4>Bedford Bizarre Tea</h4>
         </div>
 
     </div>
@@ -100,13 +85,13 @@
   <!-- LOCATIONS -->
 
   <section id="locations">
-    <div class="container">
-      <h1>Locations</h1>
+    <div class="container-fluid">
+      <h2>Locations</h2>
 
       <div>
         <div class="col-sm-4">
           <div class="col-sm-8 col-sm-offset-3">
-            <p>Downtown</p>
+            <h3>Downtown</h3>
             <p>384 West 4th St</p>
             <p>Suite 108</p>
             <p>Portland, Maine</p>
@@ -115,7 +100,7 @@
 
         <div class="col-sm-4">
           <div class="col-sm-8 col-sm-offset-2">
-            <p>East Bayside</p>
+            <h3>East Bayside</h3>
             <p>3433 Phisherman's Avenue</p>
             <p>(Northwest Corner)</p>
             <p>Portland, Maine</p>
@@ -139,10 +124,10 @@
   <!-- CONTACT -->
 
   <section id="contact">
-    <div class="container text-center">
-      <h1>The Tea Cozy</h1>
-      <p class="email">contact@theteacozy.com</p>
-      <p class="phone">917-555-8904</p>
+    <div class="container">
+      <h2>The Tea Cozy</h2>
+      <h5 class="email">contact@theteacozy.com</h5>
+      <h5 class="phone">917-555-8904</h5>
     </div>
   </section>
 
@@ -150,11 +135,14 @@
 
   <footer>
     <div class="container-fluid">
-      <p>copyright The Tea Cozy 2017</p>
+      <h5>copyright The Tea Cozy 2017</h5>
     </div>
   </footer>
 
   <!-- SCRIPTS -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="resources/js/main.js" type="text/javascript"></script>
 
 </body>

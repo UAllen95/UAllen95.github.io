@@ -1,83 +1,73 @@
 /* GENERAL */
 
 body {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
   font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  color: seashell;
   background-color: black;
   opacity: 0.9;
-  color: seashell;
+  text-align: center;
   overflow-x: hidden;
 }
 
-h1 {
+h2 {
   font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+.container-fluid {
+  margin: 0 3rem;
 }
 
 /* NAVBAR */
 
-header .navbar {
+header .navbar-inverse {
   background-color: black;
-  height: 69px;
-  border-bottom: 2px solid seashell;
+  border-bottom: 1px solid seashell;
   margin: 0;
 }
 
-header .navbar .container-fluid {
-  height: 100%;
+header a.navbar-brand {
+  padding: 0 0 0 10px;
+  margin: 8px 0;
 }
 
-header .navbar .navbar-header {
-  width: 300px;
-  height: 69px;
-}
-
-header .navbar .navbar-header a.navbar-brand {
-  padding: 0;
-  margin: 3% 20%;
-}
-
-header .navbar .navbar-header img {
+header .navbar-brand img {
   height: 50px;
 }
 
-header .navbar .navbar-right {
-  margin: 0.85% 5%;
-}
-
-header .navbar .navbar-right a {
+header .navbar-collapse a {
+  text-decoration: underline;
   color: seashell;
+  line-height: 1.6;
 }
 
-header .navbar.navbar-white {
-  display: none;
+/* MISSION */
+
+#mission {
 }
 
-/* JUMBOTRON */
-
-#main .jumbotron {
+#mission .container-fluid {
   background-image: url("../images/mission-background.jpg");
   background-size: cover;
   background-position: center;
-  height: auto;
-  margin-top: 69px;
+  padding: 24rem 0;
 }
 
-#main .main-text {
+#mission .black-background {
   background-color: black;
-  padding: 25px;
-  margin: 24rem -15px;
 }
 
-#main .main-text h1 {
-  font-size: 5rem;
-  margin: 0;
-}
-
-#main .main-text p {
+#mission h2 {
   padding: 10px 0 0;
-  margin: 0;
+}
+
+#mission h4 {
+  padding: 0 0 10px;
 }
 
 /* FEATURED */
@@ -96,15 +86,11 @@ header .navbar.navbar-white {
 
 /* LOCATIONS */
 
-#locations .container {
-  font-size: 1.5rem;
+#locations .container-fluid {
   background-image: url("../images/locations-background.jpg");
+  background-size: cover;
   background-position: center;
   padding: 0 0 120px;
-}
-
-#locations h1 {
-  padding: 20px;
 }
 
 #locations .col-sm-8 {
@@ -131,44 +117,5 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  header .navbar {
-    height: auto;
-  }
 
-  header .navbar.navbar-black {
-    height: 122px;
-    border: 0;
-  }
-
-  header .navbar .navbar-header {
-    width: 100%;
-    height: auto;
-    margin: 0!important;
-  }
-
-  header .navbar .navbar-header a {
-    height: auto;
-    width: 100%;
-    margin: 0!important;
-  }
-
-  header .navbar .navbar-header img {
-    width: auto;
-    height: auto;
-    margin: 19px auto;
-  }
-
-  header .navbar .navbar-right {
-    display: none;
-  }
-
-  header .navbar.navbar-white {
-    background-color: seashell;
-    display: block;
-    top: 122px;
-  }
-
-  header .navbar.navbar-white img {
-    height: 4rem;
-  }
 }
