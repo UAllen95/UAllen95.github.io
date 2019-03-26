@@ -55,7 +55,6 @@ a.btn-primary:active {
 
 /* HEADER */
 
-/* Header */
 header {
   font-weight: bold;
 }
@@ -66,6 +65,19 @@ header .navbar-nav a.active {
 
 header .navbar-nav a.active:focus {
   background-color: #e7e7e7;
+}
+
+header .navbar-nav a {
+  color: #777;
+}
+
+header .navbar-nav a:focus {
+  color: black;
+}
+
+header .navbar-nav li {
+  display: inline-block;
+  padding: 15px;
 }
 
 /* JUMBOTRON */
@@ -118,7 +130,7 @@ header .navbar-nav a.active:focus {
   color: #399bd1;
 }
 
-#main .featured .list li {
+#main .featured .product-categories li {
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.4;
 }
@@ -171,19 +183,21 @@ footer p {
     width: auto;
   }
 
+  /* NAVBAR */
+
   header ul.navbar-nav {
     text-align: center;
     display: inline-block;
     float: none!important;
     font-size: 1.7rem;
     width: 100%;
-    margin: auto;
   }
 
-  header ul.navbar-nav li {
-    width: 33%;
-    padding: 20px;
-    font-size: 2.5rem;
+  header .navbar-nav li {
+    display: inline-block;
+    width: 32%;
+    font-size: 1.8rem;
+    padding: 35px 0;
   }
 
   header .navbar-brand {
@@ -196,12 +210,10 @@ footer p {
     margin: 0 auto;
   }
 
-  .carousel {
-    top: 96px;
-  }
+  /* JUMBOTRON */
 
   .jumbotron {
-    min-height: 861px;
+    min-height: 876px;
   }
 
   .jumbotron p {
@@ -209,25 +221,16 @@ footer p {
     height: auto;
   }
 
-  #main {
-    padding-top: 96px;
-  }
-
-  #main .row {
-    text-align: center;
-  }
-
-  #main .product-categories{
-    text-align: right;
-  }
+  /* MAIN */
 
   #main .documentary {
+    text-align: left;
     padding: 20px;
   }
 
   #main .product-categories {
-    text-align: left;
     padding: 20px;
+    border-left: 3px solid #777;
   }
 
   #main .projects img {
@@ -238,11 +241,7 @@ footer p {
     padding-bottom: 10px;
   }
 
-@media only screen and (max-width: 768px) {
-  header ul.navbar-nav li {
-    display: inline-block;
-    width: 32%;
-  }
+@media only screen and (max-width: 767px) {
 }
 
 @media only screen and (max-width: 480px) {

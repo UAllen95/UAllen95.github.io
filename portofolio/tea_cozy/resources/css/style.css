@@ -2,7 +2,7 @@
 
 body {
   font-family: "Helvetica", sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -10,13 +10,33 @@ body {
   overflow-x: hidden;
 }
 
+p {
+    line-height: 2.8;
+    margin: 0;
+}
+
 h2 {
   font-weight: bold;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h4 {
   font-weight: bold;
   margin: 10px 0 15px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.container {
+  padding: 2rem 1rem;
 }
 
 .container-fluid {
@@ -42,8 +62,9 @@ header .navbar-brand img {
 
 header .navbar-collapse a {
   text-decoration: underline;
-  color: seashell;
+  color: seashell!important;
   line-height: 1.6;
+  padding: 19px;
 }
 
 /* MISSION */
@@ -55,67 +76,116 @@ header .navbar-collapse a {
   background-image: url("../images/mission-background.jpg");
   background-size: cover;
   background-position: center;
-  padding: 24rem 0;
+  padding: 28rem 0;
 }
 
 #mission .black-background {
   background-color: black;
+  opacity: 0.8;
+  border-top: 1px solid seashell;
+  border-bottom: 1px solid seashell;
 }
 
 #mission h2 {
-  padding: 10px 0 0;
+  padding: 10px 0;
 }
 
 #mission h4 {
-  padding: 0 0 10px;
+  padding: 0 20px 10px 20px;
 }
 
 /* FEATURED */
-
-#featured .container {
-  padding: 20px 0;
+#featured h4 {
+  margin: 10px auto 10px auto;
 }
 
 #featured img {
   width: 90%;
+  border-radius: 7px;
+  border: 1px solid seashell;
 }
 
-#featured p {
-  padding: 10px 0 20px;
+#featured .item {
+  padding: 10px;
 }
 
 /* LOCATIONS */
+#locations {
+  line-height: 3rem;
+}
+
+#locations h2 {
+  margin-top: 0;
+}
 
 #locations .container-fluid {
   background-image: url("../images/locations-background.jpg");
   background-size: cover;
   background-position: center;
-  padding: 0 0 120px;
+  padding: 5rem 0 10rem 0;
 }
 
-#locations .col-sm-8 {
+#locations .box {
   background-color: black;
+  opacity: 0.8;
   padding: 20px;
+  border: 1px solid seashell;
+  border-radius: 7px;
   line-height: 2;
 }
 
 /* CONTACT */
 
-#contact h1 {
-  padding: 20px;
-}
-
-#contact .phone {
-  padding: 20px;
+#contact h5 {
+  padding: 0;
+  margin: 20px 0;
 }
 
 /* FOOTER */
 
-footer {
+footer h5 {
   text-align: left;
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
 
+@media only screen and (max-width: 1024px) {
+  #locations .pre-box {
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container-fluid {
+    margin: 0;
+  }
+
+  header .navbar-header a.navbar-brand {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  header .navbar-header img {
+    margin: 0 auto;
+  }
+
+  #mission .container-fluid {
+    padding: 15rem 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #featured h4 {
+    font-size: 1.2rem;
+  }
+
+  footer h5 {
+    padding-left: 10px
+  }
 }

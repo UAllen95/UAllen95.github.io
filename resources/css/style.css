@@ -311,6 +311,10 @@ footer .tablet {
     width: auto;
   }
 
+  #contact p.data {
+    margin: 10px 0 0;
+  }
+
   footer .arrow img {
     width: 100%;
   }
@@ -325,8 +329,8 @@ footer .tablet {
     font-size: 1.5rem;
   }
 
-  #technical-skills h3 {
-    font-size: 1.8rem;
+  #technical-skills h4 {
+  display: none;
   }
 
   #contact p.tip {
@@ -335,7 +339,6 @@ footer .tablet {
 
   #contact p.data {
     font-size: 1.5rem;
-    margin: 10px 0 0;
   }
 
   footer .desktop {
