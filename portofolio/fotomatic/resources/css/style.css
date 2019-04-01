@@ -166,7 +166,7 @@ header .tablet {
 #sign-up-section {
   align-content: center;
   width: auto;
-  background-image: url("../images/banner-landingpage.jpg");
+  background-image: url("../images/banner_landingpage.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

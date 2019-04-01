@@ -20,7 +20,6 @@ h4 {
   font-size: 1.4rem;
 }
 
-/* Buttons */
 a.btn-primary {
   background-color: #399bd1;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -38,7 +37,6 @@ a.btn-primary:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
-/* Images animation */
 .image-container {
   overflow: hidden;
 }
@@ -54,7 +52,6 @@ a.btn-primary:active {
 }
 
 /* HEADER */
-
 header {
   font-weight: bold;
 }
@@ -81,7 +78,6 @@ header .navbar-nav li {
 }
 
 /* JUMBOTRON */
-
 .jumbotron {
   background-position: center;
   background-size: cover;
@@ -100,47 +96,58 @@ header .navbar-nav li {
   font-size: 2.4rem;
 }
 
+.jumbotron br {
+  display: none;
+}
+
 .background-bike {
-  background-image: url("../images/jumbotron-bike.jpg");
+  background-image: url("../images/jumbotron_bike.jpg");
 }
 
 .background-beer {
-  background-image: url("../images/jumbotron-beer.jpg");
+  background-image: url("../images/jumbotron_beer.jpg");
 }
 
 .background-flowers {
-  background-image: url("../images/jumbotron-flowers.jpg");
+  background-image: url("../images/jumbotron_flowers.jpg");
 }
 
 .background-duffel {
-  background-image: url("../images/jumbotron-duffel.jpg");
+  background-image: url("../images/jumbotron_duffel.jpg");
 }
 
-/* MAIN */
-
-#main {
-  margin-bottom: 5.85rem;
+/* FEATURED */
+#featured img {
+  margin: 0 auto;
 }
 
-#main h3 {
-  padding-bottom: 10px;
+#featured .image-container {
+  padding: 15px;
 }
 
-#main .featured h4.product {
+#featured .list h4 {
   color: #399bd1;
 }
 
-#main .featured .product-categories li {
+#featured .list li {
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.4;
 }
 
-#main .projects h4 {
-  padding-top: 10px;
+/* PROJECTS */
+#projects {
+  padding-bottom: 20px;
+}
+
+#projects img {
+  margin: 0 auto;
+}
+
+#projects .box {
+  padding: 15px 0;
 }
 
 /* FOOTER */
-
 footer {
   text-align: center;
   background-color: #f3f3f3;
@@ -160,30 +167,9 @@ footer p {
 }
 
 @media only screen and (max-width: 1024px) {
-  h3 {
-    font-size: 4rem;
-    padding: 20px 0 40px 0!important;
+  body {
+    text-align: center;
   }
-
-  h4 {
-    font-size: 2.8rem;
-  }
-
-  p {
-    font-size: 2.3rem;
-  }
-
-  li {
-    font-size: 2.15rem;
-  }
-
-  a.btn {
-    font-size: 3.2rem;
-    padding: 30px;
-    width: auto;
-  }
-
-  /* NAVBAR */
 
   header ul.navbar-nav {
     text-align: center;
@@ -197,7 +183,6 @@ footer p {
     display: inline-block;
     width: 32%;
     font-size: 1.8rem;
-    padding: 35px 0;
   }
 
   header .navbar-brand {
@@ -210,41 +195,42 @@ footer p {
     margin: 0 auto;
   }
 
-  /* JUMBOTRON */
-
-  .jumbotron {
-    min-height: 876px;
+  .jumbotron br {
+    display: inline;
   }
-
-  .jumbotron p {
-    font-size: 3.5rem;
-    height: auto;
-  }
-
-  /* MAIN */
-
-  #main .documentary {
-    text-align: left;
-    padding: 20px;
-  }
-
-  #main .product-categories {
-    padding: 20px;
-    border-left: 3px solid #777;
-  }
-
-  #main .projects img {
-    margin: 20px auto;
-  }
-
-  #main p {
-    padding-bottom: 10px;
-  }
-
-@media only screen and (max-width: 767px) {
 }
 
 @media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 4.5rem!important;
+  }
+
+  header .navbar-nav li {
+    font-size: 1.3rem;
+  }
+
+  .jumbotron {
+    padding: 15rem 0 8rem;
+  }
+
+  .jumbotron p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  .jumbotron a.btn {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  #featured .info {
+    text-align: left;
+  }
+
+  #projects .text {
+    padding-bottom: 15px;
+  }
+
   footer {
     padding: 10px 0;
   }

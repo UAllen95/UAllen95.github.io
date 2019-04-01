@@ -46,7 +46,8 @@ p {
 /* General - Backgrounds */
 .yellow-background {
   background-color: #fff986;
-  background-image: linear-gradient(to left, #154854, #fff986, #154854);
+  background-image: linear-gradient(to left, #154854, white, #154854);
+  box-shadow: 7px 6.75px 18px 11px #fff986;
   border-radius: 10px;
   padding: 20px;
   margin: 0 3% 30px 3%;
@@ -55,8 +56,8 @@ p {
 /* Navbar */
 header .navbar-default {
   background-color: white;
+  background-image: linear-gradient(to top, #154854 -68%, white);
   border: 0;
-  border-bottom: 5px solid #fff986;
   border-radius: 0;
   margin: 0;
 }
@@ -81,8 +82,13 @@ header .navbar-collapse {
 header .navbar-collapse.in {
 }
 
-header .navbar-collapse .dropdown .dropdown-toggle {
+header .navbar-collapse .dropdown a.dropdown-toggle {
   color: #154854;
+}
+
+header .navbar-collapse .dropdown.open a.dropdown-toggle {
+  background-color: white;
+  background-image: linear-gradient(to top, #154854, white, #154854);
 }
 
 header .divider {
@@ -97,6 +103,10 @@ header .navbar-collapse .phone {
 header .navbar-collapse .phone li {
   display: inline-block;
   padding: 5px 15px;
+}
+
+header .navbar-collapse .phone a {
+  color: black;
 }
 
 /* Jumbotron */
@@ -168,7 +178,6 @@ section {
   padding: 0;
   border: 7px solid #154854;
   border-radius: 7px;
-  box-shadow: 7px 6.75px 18px 11px #fff986;
 }
 
 #portfolio .portfolio-box h3 {
@@ -219,7 +228,6 @@ section {
   width: fit-content;
   padding: 20px;
   border: 2px solid white;
-  box-shadow: 7px 6.75px 18px 11px #fff986;
   border-radius: 20px;
   margin-left: 15px;
 }
