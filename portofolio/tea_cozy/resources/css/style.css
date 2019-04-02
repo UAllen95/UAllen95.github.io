@@ -44,9 +44,12 @@ h5 {
 
 /* NAVBAR */
 header .navbar-inverse {
-  background-color: black;
   border-bottom: 1px solid seashell;
   margin: 0;
+}
+
+header .navbar-inverse .container-fluid {
+  background-color: black;
 }
 
 header a.navbar-brand {
@@ -58,12 +61,91 @@ header .navbar-brand img {
   height: 50px;
 }
 
+header .navbar-collapse {
+  padding: 0 15px;
+}
+
 header .navbar-collapse a {
   text-decoration: underline;
   color: white!important;
   line-height: 1.6;
   padding: 19px;
 }
+
+header ul.navbar-default {
+  background-color: white;
+  margin: 0;
+  display: none;
+}
+
+header .navbar-default a {
+  background-color: transparent!important;
+}
+
+header .navbar-default img {
+  width: 20px;
+  margin: 10px;
+}
+
+header .navbar-default .mobile-list a {
+  text-align: center;
+  line-height: 2!important;
+  font-size: 2rem;
+  font-family: monospace;
+  color: black!important;
+  text-decoration: underline;
+}
+
+header #nav-toggle {
+  position: unset;
+  display: -webkit-inline-box;
+  padding: 23px 35px 23px 0;
+}
+
+header #nav-toggle span,
+header #nav-toggle span:before,
+header #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+header #nav-toggle span:before {
+  top: -10px;
+}
+
+header #nav-toggle span:after {
+  bottom: -10px;
+}
+
+header #nav-toggle span,
+header #nav-toggle span:before,
+header #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+header #nav-toggle.active span {
+  background-color: transparent;
+}
+
+header #nav-toggle.active span:before,
+header #nav-toggle.active span:after {
+  top: 0;
+}
+
+header #nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+header #nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
 
 /* MISSION */
 
@@ -99,6 +181,7 @@ header .navbar-collapse a {
 }
 
 #featured img {
+  opacity: 0.92;
   width: 90%;
   border-radius: 7px;
   border: 1px solid seashell;
@@ -172,6 +255,14 @@ footer h5 {
 
   header .navbar-header img {
     margin: 0 auto;
+  }
+
+  header .navbar-default {
+    display: block!important;
+  }
+
+  #mission {
+    margin-top: 120px;
   }
 
   #mission .container-fluid {

@@ -10,6 +10,7 @@
 
   <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+  <link href="resources/slick/slick.css" rel="stylesheet" type="text/css">
   <link href="resources/css/style.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -19,20 +20,33 @@
 
   <header>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="resources/images/logo.png">
-          </a>
-        </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="smooth-scroll" href="#mission">Mission</a></li>
-            <li><a class="smooth-scroll" href="#featured">Featured Tea</a></li>
-            <li><a class="smooth-scroll" href="#locations">Locations</a></li>
-        </div>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="resources/images/logo.png">
+        </a>
       </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="smooth-scroll" href="#mission">Mission</a></li>
+          <li><a class="smooth-scroll" href="#featured">Featured Tea</a></li>
+          <li><a class="smooth-scroll" href="#locations">Locations</a></li>
+        </ul>
+      </div>
+
+      <ul class="nav navbar-nav navbar-default">
+        <li class="dropdown">
+          <a href="#" id="nav-toggle"><span></span></a>
+          <ul class="mobile-list">
+            <li><a class="smooth-scroll" href="#mission">Mission</a></li>
+            <li><a class="smooth-scroll" href="#featured">Featured</a></li>
+            <li><a class="smooth-scroll" href="#locations">Locations</a></li>
+            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+
     </nav>
   </header>
 
@@ -50,32 +64,32 @@
   <!-- FEATURED -->
 
   <section id="featured">
-    <div class="container">
+    <div class="container gallery">
       <h2>Tea of the Month</h2>
       <h4>What's Steeping at The Tea Cozy?</h4>
 
         <div class="col-sm-4 col-xs-6 item">
-          <img src="resources/images/berryblitz.jpg" alt="">
+          <img id="0" src="resources/images/berryblitz.jpg" alt="A cup of berry tea.">
           <h4>Fall Berry Blitz Tea</h4>
         </div>
 
         <div class="col-sm-4 col-xs-6 item">
-          <img src="resources/images/spiced_rum.jpg" alt="">
+          <img id="1" src="resources/images/spiced_rum.jpg" alt="A crate of Rum tea." >
           <h4>Spiced Rum Tea</h4>
         </div>
 
         <div class="col-sm-4 col-xs-6 item">
-          <img src="resources/images/donut.jpg" alt="">
+          <img id="2" src="resources/images/donut.jpg" alt="A donut." >
           <h4>Seasonal Donuts</h4>
         </div>
 
         <div class="col-sm-4 col-sm-offset-2 col-xs-6 item">
-          <img src="resources/images/myrtle_ave.jpg" alt="">
+          <img id="3" src="resources/images/myrtle_ave.jpg" alt="A cup of myrtle tea." >
           <h4>Myrtle Ave Tea</h4>
         </div>
 
         <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3 item">
-          <img src="resources/images/bedford_bizarre.jpg" alt="">
+          <img id="4" src="resources/images/bedford_bizarre.jpg" alt="A cup bedford tea." >
           <h4>Bedford Bizarre Tea</h4>
         </div>
 
@@ -137,10 +151,37 @@
     <h5>copyright The Tea Cozy 2019</h5>
   </footer>
 
+<!--  <div class="overlay">
+    <a href="#" class="btn">&#10006;</a>
+    <div class="carousel">
+      <div class="tea-item">
+        <img src="resources/images/berryblitz.jpg" alt="A cup of berry tea." />
+        <h4>Fall Berry Blitz Tea</h4>
+      </div>
+      <div class="tea-item">
+        <img src="resources/images/spiced_rum.jpg" alt="A crate of Rum tea." />
+        <h4>Spiced Rum Tea</h4>
+      </div>
+      <div class="tea-item">
+        <img src="resources/images/donut.jpg" alt="A donut." />
+        <h4>Seasonal Donuts</h4>
+      </div>
+      <div class="tea-item">
+        <img src="resources/images/myrtle_ave.jpg" alt="A cup of myrtle tea." />
+        <h4>Myrtle Ave Tea</h4>
+      </div>
+      <div class="tea-item">
+        <img src="resources/images/bedford_bizarre.jpg" alt="A cup bedford tea." />
+        <h4>Bedford Bizarre Tea</h4>
+      </div>
+    </div>
+  </div> -->
+
   <!-- SCRIPTS -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="resources/slick/slick.min.js"></script>
   <script src="resources/js/main.js" type="text/javascript"></script>
 
 </body>
