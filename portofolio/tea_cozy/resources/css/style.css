@@ -62,10 +62,6 @@ header .navbar-inverse {
   margin: 0;
 }
 
-header .navbar-inverse .container-fluid {
-  background-color: black;
-}
-
 header a.navbar-brand {
   padding: 0 0 0 10px;
   margin: 8px 0;
@@ -269,6 +265,7 @@ footer h5 {
 
   header nav.navbar {
     opacity: 0.9;
+    padding: 0;
     border: 0;
   }
 
