@@ -8,7 +8,7 @@ $(document).ready(function(){
     $(this).toggleClass("active");
   });
 
-  $("header .mobile-list a").on("click", function(event){
+  $("header a").on("click", function(event){
     event.preventDefault();
     var headerHeight = $("header .navbar-fixed-top").height();
     var id = $(this).attr("href");
