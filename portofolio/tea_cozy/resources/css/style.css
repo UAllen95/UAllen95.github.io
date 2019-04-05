@@ -192,7 +192,7 @@ header #nav-toggle.active span:after {
 
 /* FEATURED */
 #featured h4 {
-  margin: 10px auto 10px auto;
+  margin: 10px auto 0 auto;
 }
 
 #featured img {
@@ -294,7 +294,7 @@ footer h5 {
 
 @media only screen and (max-width: 480px) {
   #featured h4 {
-    padding: 0 0 10px;
+    height: 38px;
   }
 
   footer h5 {
