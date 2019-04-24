@@ -206,6 +206,11 @@ header #nav-toggle.active span:after {
   padding: 10px;
 }
 
+#featured .item h4 {
+  height: 38px;
+  margin: 10px auto;
+}
+
 /* LOCATIONS */
 #locations {
   line-height: 3rem;
