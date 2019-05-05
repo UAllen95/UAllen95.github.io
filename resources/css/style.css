@@ -16,15 +16,10 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: bold;
+  font-family: monospace;
+  font-weight: 300;
+  opacity: 0.95;
   margin: 5px 0 20px;
-}
-
-h4 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-style: italic;
-  font-size: 2rem;
 }
 
 p {
@@ -157,21 +152,20 @@ section {
 }
 
 /* Technical-skills */
-#technical-skills .section {
-  margin: 10px 0;
-  opacity: 0.9;
-}
-
 #technical-skills img {
   opacity: 0.95;
   display: inline-block;
   vertical-align: middle;
 }
 
+#technical-skills .section {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
 /* Portfolio */
 #portfolio h3 {
   font-size: 2rem;
-  font-weight: bold;
   padding: 10px 0;
   margin: 0 0 15px 0;
 }
@@ -189,6 +183,7 @@ section {
   padding: 0;
   border: 7px solid #154854;
   border-radius: 7px;
+  margin: 0 20px;
   opacity: 0.8;
 }
 
@@ -317,8 +312,17 @@ footer .tablet {
     top: 20px;
   }
 
+  #technical-skills h3 {
+    font-size: 1.6rem;
+    margin: 8px 0 0;
+  }
+
   #portfolio .pre-portfolio {
     margin: 17.5px 0;
+  }
+
+  #portfolio .portfolio-box {
+    border: 15px solid #154854;
   }
 }
 
