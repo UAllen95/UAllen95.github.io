@@ -161,6 +161,15 @@ header #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
 
+header .back-to-index {
+  background-color: #154854;
+  height: 100%;
+  position: fixed;
+  right: 0px;
+  z-index: 2;
+  border-radius: 0;
+  border: 0;
+}
 
 /* MISSION */
 

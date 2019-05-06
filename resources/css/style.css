@@ -90,8 +90,16 @@ header .navbar-collapse .dropdown.open a.dropdown-toggle {
   background-image: linear-gradient(to top, #154854, white, #154854);
 }
 
+header .navbar-collapse .dropdown.open li {
+  padding: 5px 0;
+}
+
+header .navbar-collapse .dropdown.open li.divider {
+  padding: 0;
+}
+
 header .navbar-collapse .desktop a.smooth-scroll:hover {
-      font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   box-shadow: 5px 7px 15px 9px #154854;
 }
 
@@ -165,13 +173,13 @@ section {
 
 /* Portfolio */
 #portfolio h3 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 10px 0;
-  margin: 0 0 15px 0;
+  margin: 3px 0 10px 0;
 }
 
-#portfolio a {
-  color: #154854;
+#portfolio h3:hover {
+  text-decoration: underline;
 }
 
 #portfolio .pre-portfolio {
@@ -189,6 +197,19 @@ section {
 
 #portfolio .portfolio-box h3 {
   color: white;
+}
+
+#portfolio .tablet {
+  display: none;
+}
+
+#portfolio .tablet .box {
+  padding: 0;
+  border: 5px solid #154854;
+}
+
+#portfolio .tablet img {
+  height: 150px;
 }
 
 /* Contact */
@@ -317,12 +338,16 @@ footer .tablet {
     margin: 8px 0 0;
   }
 
-  #portfolio .pre-portfolio {
-    margin: 17.5px 0;
+  #portfolio h3 {
+    margin: 0;
   }
 
-  #portfolio .portfolio-box {
-    border: 15px solid #154854;
+  #portfolio .desktop {
+    display: none;
+  }
+
+  #portfolio .tablet {
+    display: inherit;
   }
 }
 
@@ -337,6 +362,10 @@ footer .tablet {
 
   .jumbotron .text-container {
     width: auto;
+  }
+
+  #portfolio .tablet img {
+    height: auto;
   }
 
   #contact p.data {
@@ -354,11 +383,11 @@ footer .tablet {
   }
 
   header a.navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.22rem;
   }
 
-  #technical-skills h4 {
-  display: none;
+  #technical-skills h3 {
+    display: none;
   }
 
   #contact p.tip {
