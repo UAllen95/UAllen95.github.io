@@ -171,6 +171,113 @@ header .back-to-index {
   border: 0;
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 67px;
+  right: 0;
+  background-image: linear-gradient(to right, #fff986, #154854, #154854, #154854, #154854, #154854, #fff986);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .navbar-header {
+  width: 100%;
+}
+
+.sidenav .navbar-header a {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.sidenav .navbar-header img {
+  width: 25px;
+  margin: 0 5px 3px 0;
+}
+
+.sidenav .navbar-bottom {
+  display: block;
+  position: absolute;
+  bottom: 67px;
+  padding-top: 10px;
+  border-top: 3px solid white;
+}
+
+.sidenav .navbar-bottom a {
+  padding: 20px 0;
+}
+
+.sidenav .navbar-bottom p {
+  margin-top: 10px;
+}
+
+.sidenav .navbar-bottom img {
+  width: 30%;
+  padding-top: 10px;
+}
+
+.closed-nav {
+  font-weight: bold;
+  height: -webkit-fill-available;
+  width: fit-content;
+  bottom: 0;
+  border-left: 1px solid white;
+  position: fixed;
+  float: right;
+  right: 0;
+  z-index: 1;
+  background-color: #154854;
+}
+
+.closed-nav {
+  height: 100px;
+  opacity: 0.8;
+}
+
+.closed-nav img {
+  display: block;
+}
+
+.closed-nav p {
+  display: none;
+}
+
+.closed-nav span {
+  font-size: 7rem;
+  padding: 0 20px;
+}
+
+.closed-nav img {
+  display: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closed-nav p {
+  font-size: 18px;
+}
+
 /* MISSION */
 
 #mission {
@@ -297,6 +404,14 @@ footer h5 {
     display: block!important;
   }
 
+  .sidenav {
+    top: 119px;
+  }
+
+  .sidenav .navbar-bottom {
+    bottom: 117px;
+  }
+
   #mission {
     margin-top: 120px;
   }
@@ -307,6 +422,14 @@ footer h5 {
 }
 
 @media only screen and (max-width: 480px) {
+  .sidenav {
+    padding-top: 15px;
+  }.
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
   #featured h4 {
     height: 38px;
   }

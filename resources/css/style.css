@@ -7,17 +7,18 @@ body {
 
 /* General - Text */
 h1 {
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Cinzel', serif;
 }
 
 h2 {
   font-family: 'Chivo', sans-serif;
-  font-size: 3rem;
+  font-size: 24px;
 }
 
 h3 {
   font-family: monospace;
   font-weight: 300;
+  font-size: 20px;
   opacity: 0.95;
   margin: 5px 0 20px;
 }
@@ -43,9 +44,9 @@ p {
 
 /* General - Backgrounds */
 .yellow-background {
-  background-color: #fff986;
-  background-image: linear-gradient(to left, white, #fff986, white);
-  box-shadow: 5px 7px 15px 9px #154854;
+  background-color: #F0AC0F;
+  background-image: linear-gradient(to left, white, #F0AC0F, white);
+  box-shadow: 5px 7px 15px 9px #113F57;
   border-radius: 10px;
   padding: 20px;
   margin: 0 3% 30px 3%;
@@ -54,7 +55,7 @@ p {
 /* Navbar */
 header .navbar-default {
   background-color: white;
-  background-image: linear-gradient(to top, #fff986 5%, white);
+  background-image: linear-gradient(to top, #F0AC0F 5%, white);
   border: 0;
   border-radius: 0;
   margin: 0;
@@ -62,15 +63,15 @@ header .navbar-default {
 
 header .navbar-header .navbar-brand {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #154854;
+  color: #113F57;
 }
 
 header .navbar-header button {
-  background-color: #154854;
+  background-color: #113F57;
 }
 
 header .navbar-header .navbar-toggle:focus {
-  background-color: #154854;
+  background-color: #113F57;
 }
 
 header .navbar-collapse {
@@ -82,12 +83,12 @@ header .navbar-collapse.in {
 
 header .navbar-collapse .dropdown a.dropdown-toggle {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #154854;
+  color: #113F57;
 }
 
 header .navbar-collapse .dropdown.open a.dropdown-toggle {
   background-color: white;
-  background-image: linear-gradient(to top, #154854, white, #154854);
+  background-image: linear-gradient(to top, #113F57, white, #113F57);
 }
 
 header .navbar-collapse .dropdown.open li {
@@ -100,7 +101,7 @@ header .navbar-collapse .dropdown.open li.divider {
 
 header .navbar-collapse .desktop a.smooth-scroll:hover {
   font-family: 'Montserrat Alternates', sans-serif;
-  box-shadow: 5px 7px 15px 9px #154854;
+  box-shadow: 5px 7px 15px 9px #113F57;
 }
 
 header .divider {
@@ -123,35 +124,22 @@ header .navbar-collapse .phone a {
 
 /* Jumbotron */
 .jumbotron {
-  background-color: #154854;
+  background-color: #113F57;
   color: white;
-}
-
-.jumbotron .logo-container {
-  display: inline-block;
-  vertical-align: middle;
-  width: 40%;
-  margin-right: 60px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 .jumbotron .text-container {
   display: inline-block;
   vertical-align: middle;
-  width: 500px;
+  width: 80%;
 }
 
-.jumbotron .arrow-row {
-  height: 0px;
-}
-
-.jumbotron a {
-  padding: 70px 25px 0 25px;
-}
-
-.jumbotron img.arrow-down {
-  width: 5%;
-  position: relative;
-  bottom: 45px;
+.jumbotron h1 {
+  margin: 0;
+  font-size: 41px;
+  text-align: center;
 }
 
 /* Sections */
@@ -173,7 +161,6 @@ section {
 
 /* Portfolio */
 #portfolio h3 {
-  font-size: 2.3rem;
   padding: 10px 0;
   margin: 3px 0 10px 0;
 }
@@ -187,9 +174,9 @@ section {
 }
 
 #portfolio .portfolio-box {
-  background-color: #154854;
+  background-color: #113F57;
   padding: 0;
-  border: 7px solid #154854;
+  border: 7px solid #113F57;
   border-radius: 7px;
   margin: 0 20px;
   opacity: 0.8;
@@ -205,7 +192,7 @@ section {
 
 #portfolio .tablet .box {
   padding: 0;
-  border: 5px solid #154854;
+  border: 5px solid #113F57;
 }
 
 #portfolio .tablet img {
@@ -223,7 +210,7 @@ section {
 }
 
 #contact a {
-  color: #154854;
+  color: #113F57;
 }
 
 #contact img {
@@ -253,8 +240,8 @@ section {
   font-family: 'Montserrat Alternates', sans-serif;
   font-style: italic;
   font-size: 2.5rem;
-  background-color: #154854;
-      background-image: linear-gradient(#154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854, #fff986, #154854);
+  background-color: #113F57;
+  background-image: linear-gradient(#113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57, #F0AC0F, #113F57);
   color: white;
   text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 0 #000;
   width: fit-content;
@@ -272,7 +259,7 @@ section {
 footer {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 300;
-  background-color: #154854;
+  background-color: #113F57;
   color: white;
   padding: 20px;
 }
@@ -286,11 +273,11 @@ footer li {
 }
 
 footer .text-left a {
-  color: #fff986;
+  color: #F0AC0F;
 }
 
 footer .text-right a {
-  color: #fff986;
+  color: #F0AC0F;
 }
 
 footer .arrow a {
@@ -298,7 +285,7 @@ footer .arrow a {
 }
 
 footer .arrow img {
-  width: 40%;
+  width: 50px;
 }
 
 footer .tablet {
@@ -319,35 +306,13 @@ footer .tablet {
     display: block;
   }
 
-  .jumbotron .logo-container {
-    margin-right: 0;
-  }
-
-  .jumbotron .arrow-row {
-    height: 50px;
-  }
-
-  .jumbotron img.arrow-down {
-    width: 7%;
-    position: relative;
-    top: 20px;
-  }
-
   #technical-skills h3 {
-    font-size: 1.6rem;
+    font-size: 20px;
     margin: 8px 0 0;
   }
 
   #portfolio h3 {
     margin: 0;
-  }
-
-  #portfolio .desktop {
-    display: none;
-  }
-
-  #portfolio .tablet {
-    display: inherit;
   }
 }
 
@@ -356,16 +321,17 @@ footer .tablet {
     display: none;
   }
 
-  header .navbar-collapse .phone {
-    display: block;
-  }
-
   .jumbotron .text-container {
     width: auto;
   }
 
-  #portfolio .tablet img {
-    height: auto;
+  .jumbotron h1 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  #portfolio .pre-portfolio {
+    margin: 5px 0;
   }
 
   #contact p.data {
@@ -373,7 +339,6 @@ footer .tablet {
   }
 
   footer .arrow img {
-    width: 100%;
   }
 }
 
@@ -383,11 +348,47 @@ footer .tablet {
   }
 
   header a.navbar-brand {
-    font-size: 1.22rem;
+    font-size: 15px;
+  }
+
+  .jumbotron {
+    margin-bottom: 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 28px;
+  }
+
+  #technical-skills {
+    margin: 15px 0;
+  }
+
+  #technical-skills h2 {
+    margin-bottom: 15px;
   }
 
   #technical-skills h3 {
     display: none;
+  }
+
+  #portfolio {
+    margin: 15px 0;
+  }
+
+  #portfolio h2 {
+    margin-bottom: 15px;
+  }
+
+  #portfolio h3 {
+    display: none;
+  }
+
+  #contact {
+    margin: 15px 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 15px;
   }
 
   #contact p.tip {
@@ -395,7 +396,8 @@ footer .tablet {
   }
 
   #contact p.data {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin: 0;
   }
 
   footer .desktop {
