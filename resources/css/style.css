@@ -76,6 +76,7 @@ header .navbar-header .navbar-toggle:focus {
 
 header .navbar-collapse {
   font-size: 1.7rem;
+  border-top: 0;
 }
 
 header .navbar-collapse.in {
@@ -319,6 +320,18 @@ footer .tablet {
 @media only screen and (max-width: 767px) {
   header .navbar-collapse .desktop {
     display: none;
+  }
+
+  header .navbar-collapse .phone {
+    display: block;
+  }
+
+  header .navbar-collapse .phone {
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  header .navbar-collapse .phone a {
+    color: #113F57;
   }
 
   .jumbotron .text-container {
