@@ -1,20 +1,3 @@
-
-$(document).ready(function(){
-
-  var lastScrollTop = 0;
-  $(window).scroll(function(){
-    var scrollTop = $(this).scrollTop();
-    if (scrollTop - lastScrollTop > 50){
-      var navHeight = $('.navbar').css('height');
-      $('.navbar').animate({top: '-' + navHeight}, 150);
-      lastScrollTop = scrollTop;
-    } else if (lastScrollTop - scrollTop > 50) {
-      $('.navbar').animate({top: '0px'}, 150);
-      lastScrollTop = scrollTop;
-    }
-  });
-});
-
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";

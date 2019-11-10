@@ -1,127 +1,94 @@
-/* GENERAL */
+/* Universal Styles */
 
-body {
+html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
-h1 {
-  font-size: 3.125rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-}
-
-
-.center {
-  text-align: center;
+#features-section, #filters-section, #quotes-section, footer {
+  position: sticky;
+  z-index: 1;
 }
 
 .button {
-  border-radius: 0.25rem;
-  background-color: #154854;
+  border-radius: 4px;
+  background-color: #4a4a4a;
   color: white;
 }
 
-.button img {
-  width: 40%;
-}
-
-.button p {
-  color: white;
+.image-container {
+  overflow: hidden;
 }
 
 .image-container img {
   display: block;
-  width: 100%;
-  height: 65%;
 }
 
-.image-container-fil {
-  overflow: hidden;
-}
-
-.image-container-fil img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* HEADER */
-
+/* Header */
 header {
   position: fixed;
-  z-index: 50;
-  padding: 10px;
   width: 100%;
-  border-bottom: solid 3px black;
+  border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 9;
 }
 
-header img {
-  height: 25px;
-}
-
-header .content {
-  display: flex;
-  align-items: center;
-  padding: 0 1.875rem;
-}
-
-header .logo {
-  font-family: "Rubik", sans-serif;
-  flex: 1;
-}
-
-header .logo h2 {
+header a {
   color: #4a4a4a;
-  display: inline-block;
-  position: relative;
-  top: -4px;
-  right: 3px;
-}
-
-header nav ul {
-  display: flex;
-}
-
-nav li {
-  padding-left: 3.5rem;
-}
-
-nav a {
-  vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1rem;
-  color: #4a4a4a;
 }
 
-header .icon {
-  width: 1.25rem;
-  padding-left: .75rem;
+header .navbar-brand {
+  line-height: 1.6;
+  border-bottom: 2px solid #007bff;
+  border-radius: 6px;
+  margin: 0;
 }
 
-header .mobile {
+header .navbar {
+  height: 85px;
+  padding: 0 15px;
+}
+
+header .navbar-nav {
+  display: inline-block;
+}
+
+header .navbar-nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header .navbar-nav li img {
+  margin: 4px;
+}
+
+header .navbar-nav .tablet {
+  background-color: #007bff;
   display: none;
+  border-radius: 8px;
+  padding: 2px 4%;
+  font-weight: 600;
 }
 
-header .tablet {
+header .phone {
   display: none;
 }
 
 /* The side navigation menu */
 .sidenav {
+  background-color: #154854;
+  font-family: monospace;
   height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 2;
-  top: 50px;
-  right: 0;
-  background-image: linear-gradient(to right, #fff986, #154854, #154854, #154854, #154854, #154854, #fff986);
   overflow-x: hidden;
   padding-top: 60px;
+  position: fixed;
+  right: 0;
+  text-shadow: -1.2px -1.2px 0 #F0AC0F, 1.2px -1.2px 0 #F0AC0F, -1.2px 1.2px 0 #F0AC0F, 1.2px 1.2px 0 #F0AC0F;
+  top: 67px;
   transition: 0.5s;
+  width: 0;
+  z-index: 3;
 }
 
 .sidenav a {
@@ -141,8 +108,8 @@ header .tablet {
 }
 
 .sidenav .navbar-header {
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .sidenav .navbar-header a {
@@ -152,13 +119,14 @@ header .tablet {
 
 .sidenav .navbar-header img {
   width: 25px;
-  margin: 0 5px 3px 0;
+  margin: 0 15px 3px 0;
 }
 
 .sidenav .navbar-bottom {
   display: block;
   position: absolute;
-  bottom: 50px;
+  width: 100%;
+  bottom: 67px;
   padding-top: 10px;
   border-top: 3px solid white;
 }
@@ -168,7 +136,6 @@ header .tablet {
 }
 
 .sidenav .navbar-bottom p {
-  font-size: 1.5rem;
   margin-top: 10px;
 }
 
@@ -178,113 +145,60 @@ header .tablet {
 }
 
 .closed-nav {
-  font-weight: bold;
-  height: -webkit-fill-available;
-  width: fit-content;
-  right: 0;
-  border-left: 1px solid white;
-  margin-top: 50px;
-  position: fixed;
-  text-align: center;
-  z-index: 1;
-  color: white;
   background-color: #154854;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  bottom: 0;
+  float: right;
+  font-weight: bold;
+  height: 100px;
+  opacity: 0.8;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 90px;
+  z-index: 2;
 }
 
 .closed-nav span {
-  font-size: 37.5px;
-  padding: 0 20px;
+  color: white;
+  display: block;
+  font-family: monospace;
+  font-size: 70px;
+  line-height: 1.25;
 }
 
-.closed-nav img {
-  display: none;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.closed-nav p {
-  font-size: 18px;
-  line-height: 2.1;
-}
-
-.main-content {
-  position: relative;
-  top: 51px;
-}
-
-#features {
-  background-color: #f3f3f3;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-shrink: 50;
-  width: 90%;
-  padding: 4rem 5%;
-}
-
-.feature {
-  flex: 1;
-  padding: 2rem 2rem 0rem 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
-  border-radius: 25px;
-}
-
-.feature .image-container {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-#features img {
-  border-radius: 10px;
-}
-
-#features h2 {
-  color: #4a4a4a;
-  font-weight: bold;
-  padding-bottom: 1.2rem;
-}
-
-#features h3 {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #4a4a4a;
-}
-
-#features .content {
-  height: 9.1875rem;
-  padding: 2.5rem 0;
-}
-
-/* SIGN UP SECTION */
-
-#sign-up-section {
-  align-content: center;
-  width: auto;
-  background-image: url("../images/banner_landingpage.jpg");
-  background-size: cover;
+/* Banner-section */
+.jumbotron {
+  background-image: url("../images/banner-landingpage.jpg");
   background-position: center;
-  display: flex;
-  padding: 10.625rem;
+  background-size: cover;
+  border-radius: 0;
+  padding: 170px 100px;
+  position: sticky;;
+  top: 5.3125rem; /* To offset for fixed header. */
+  z-index: 0;
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 1rem;
-  background-color: #9dc20b;
+  background-image: linear-gradient(45deg, #007bff, #fd7e14);
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 0 80px 56px;
+  width: fit-content;
 }
 
 #sign-up-cta .content {
-  width: 25.625rem;
-  margin-top: 2rem;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: white;
+  margin-top: 2rem;
+  width: 25.625rem;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
 }
 
 #sign-up-cta h2 {
@@ -301,114 +215,205 @@ header .tablet {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
-  font-weight: bold;
   padding-bottom: .75rem;
+  margin: 0;
+}
+
+#sign-up-cta a {
+  display: block!important;
+}
+
+#sign-up-cta a:hover {
+  text-decoration: none;
 }
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
-  border-radius: 10px;
 }
 
+#sign-up-cta .button:hover {
+  color: #007bff;
+}
 
-/* FILTER SECTION */
+/* Features Section */
+#features-section {
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+  position: sticky;
+  z-index: 1;
+}
 
-#filter {
+#features-section .feature {
+  padding: 2rem;
+  background-color: white;
+  border-right: 19px solid #f3f3f3;
+  border-left: 19px solid #f3f3f3;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+#features-section .row {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0!important;
+}
+
+#features-section .image-container {
+  width: 100%;
+  height: 65%;
+  margin: 0 auto;
+}
+
+#features-section img {
+  width: 100%;
+  height: 100%;
+}
+
+#features-section h2 {
+  border-bottom: 3px solid #007bff;
+  border-radius: 15px;
+  color: #4a4a4a;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 22px 0 10px;
+}
+
+#features-section h3 {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-top: 17px;
+}
+
+/* Filters Section */
+#filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  font-family: "Roboto", sans-serif;
 }
 
-#filter .content {
+#filters-section .content {
   padding: 0 .625rem;
-  margin-bottom: 3rem;
+  margin: 0 0 40px 0;
+  display: block;
+  width: 100%;
 }
 
-#filter .content h2 {
+#filters-section .content h2 {
   color: white;
+  font-size: 34px;
   font-weight: bold;
-  padding-bottom: 1rem;
 }
 
-#filter .content h3 {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 300;
+#filters-section .content h3 {
   color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
-#filter .images-container {
-  max-width: 100%;
+#filters-section .images {
+  width: 100%;
+  margin: 0;
   padding: 0 1%;
-  display: flex;
 }
 
-/* QUOTE SECTION */
+#filters-section .image-container {
+  padding: 0;
+}
 
-#quote {
+#filters-section img {
+  width: -webkit-fill-available;
+}
+
+/* Quotes Section */
+#quotes-section {
   background-color: #f3f3f3;
+  padding: 80px 0;
 }
 
-#quote .content {
-  padding: 5rem 0;
+#quotes-section .content {
+  width: 100%;
+  padding: 0 40px;
+  margin: 0;
 }
 
-#quote span {
-  padding-right: 1.875rem;
+#quotes-section .quote {
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  padding: 0 15px 0 0;
 }
 
-/* FOOTER */
+#quotes-section .col-sm-2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
+}
 
+#quotes-section .quote-citation {
+  width: auto;
+  height: auto;
+}
+
+/* Footer */
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  padding: 22px 30px!important;
+  font-family: "Roboto", sans-serif;
 }
 
 footer .content {
   color: white;
-  display: flex;
+  font-size: .75rem;
 }
 
-footer .copyright {
-  flex-grow: 1;
+footer .location {
+  float: right;
 }
 
-/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  /* Header */
+  header .navbar-brand {
+    border-bottom: 3px solid #007bff;
+    border-radius: 20px;
+    padding: 7px 0 3px;
+    text-align: center;
+    width: 100%;
+  }
 
-@media only screen and (max-width: 1180px) {
-  #quote span {
+  header .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar-nav li {
+    margin: auto 3.4%;
+  }
+
+  header .navbar-nav .tablet {
     display: inline-block;
-    width: 70%;
   }
 
-  #quote img {
-    display: inline-block;
-  }
-}
-
-@media only screen and (max-width: 890px) {
-  #sign-up-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-    padding: 0;
-  }
-
+  /* Banner-section */
   #sign-up-cta {
     position: static;
     width: auto;
     height: auto;
     background-color: transparent;
     border: none;
+    background-image: none;
+    padding: 0;
   }
 
   #sign-up-cta .content {
     margin-top: 0;
+    width: 100%;
+    text-shadow: -1.2px -1.2px 0 #fd7e14, 1.2px -1.2px 0 #007bff, -1.2px 1.2px 0 #fd7e14, 1.2px 1.2px 0 #007bff;
   }
 
   #sign-up-cta .email {
@@ -416,63 +421,71 @@ footer .copyright {
   }
 
   #sign-up-cta h1 {
-    font-size: 3.125rem;
+    font-size: 40px;
   }
 
   #sign-up-cta h2 {
-    font-size: 2.25rem;
+    font-size: 35px;
   }
 
-  #features .content {
-    padding-bottom: 0;
+  #features-section {
+    padding: 0;
   }
 
-  #features h2 {
-    font-size: 1.125rem;
+  #features-section .feature {
+    margin: 0;
+    padding: 1.25rem 1rem 0 1rem;
+    border-right: 10px solid #f3f3f3;
+    border-left: 10px solid #f3f3f3;
+  }
+
+  #features-section .feature h2 {
+    border-bottom: 2px solid #007bff;
+    border-radius: 15px;
+    font-size: 16px;
     line-height: 1.3;
-    font-weight: bold;
+    padding: 22px 0 8px;
   }
 
-  #features h3 {
-    font-size: 1.2rem;
+  #features-section .feature h3 {
+    font-size: 14px;
     line-height: 1.4;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .main-content {
-    top: 2.5625rem;
-    overflow: hidden;
+    padding: 0 10px 15px 10px;
   }
 
-  header
-
-  #filter {
-    padding: 1.5rem 0;
+  #filters-section {
+    padding: 1.5rem 0 0 0;
   }
 
-  #filter .content {
+  #filters-section .content {
     margin-bottom: 1rem;
   }
 
-  #filter .content h2 {
-    padding-bottom: .625rem;
-    font-size: 1.125rem;
+  #filters-section .content h2 {
+    font-size: 21px;
+    font-weight: 600;
     line-height: 1.3;
-    font-weight: normal;
+    padding-bottom: .625rem;
   }
 
-  #filter .content h3 {
-    font-size: 1.2rem;
+  #filters-section .content h3 {
+    font-size: .875rem;
     line-height: 1.4;
   }
 
-  #filter .extra {
-    display: none;
+  #quotes-section {
+    padding: 45px 0;
   }
 
-  #quote .content {
-    padding: 1.875rem .625rem;
+  #quotes-section .quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #quotes-section .quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
   }
 
   footer .content {
@@ -480,53 +493,78 @@ footer .copyright {
   }
 }
 
-@media only screen and (max-width: 642px) {
-  header {
-    height: 3rem;
+@media only screen and (max-width: 575px) {
+  header .navbar-nav {
+    padding-top: 3px;
   }
 
-  header .content {
-    padding: .5rem 0;
+  header .navbar-nav li {
+    margin: auto 2.7%;
   }
 
-  header .desktop,
-  header .tablet {
+  header .navbar-nav a.nav-item {
+    font-size: 14px;
+  }
+
+  header .navbar-nav .nav-item img {
+    margin: 0 0 0 3px;
+  }
+
+  #features-section .row {
+    padding: 0;
+  }
+
+  #features-section .feature {
+    border: 0;
+    border-bottom: 7px solid #4a4a4a;
+    border-radius: 0;
+  }
+
+  #filters-section .row {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  #filters-section .image-container {
+    display: inline-block;
+    width: 30%;
+  }
+
+  #filters-section .extra {
     display: none;
   }
 
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  #features .content {
-    height: auto;
-    padding: 1rem;
-  }
-
-  #features .content h2 {
-    padding-bottom: .5rem;
-  }
-
-  #quote span {
-    font-size: 1.3rem;
-  }
-}
-
-@media only screen and (max-width: 543px) {
-  #quote img {
-    padding-top: 1rem;
+  #quotes-section span.quote {
+    font-size: 23px;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .phone {
+    display: block;
+    height: 48px;
+    padding: 2.5px 0 0;
+  }
+
+  header .phone .navbar-nav li {
+    line-height: 2;
+    margin: auto 5%;
+  }
+
+  .sidenav {
+    top: 48px;
+  }
+
+  .jumbotron {
+    padding: 140px 50px;
+    top: 49px;
+  }
+
   #sign-up-section {
     height: 20rem;
   }
@@ -539,39 +577,16 @@ footer .copyright {
     font-size: 2rem;
   }
 
-  #features {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  #features .feature {
-    padding: 1rem 1rem 0 1rem;
-    margin: 0;
-    border-radius: 0;
-  }
-
-  #features .content {
-    text-align: center;
-    height: auto;
-    padding-bottom: 1.875rem;7
-  }
-
-  #features .content h2 {
-    font-weight: normal;
-  }
-
-  #filter .image-hide {
+  #filters-section .extra {
     display: none;
   }
 
-  #quote span {
-    text-align: center;
-    width: 80%;
+  #quotes-section span.quote {
+    padding: 0;
+    font-size: 21px;
   }
 
-  footer .content span {
-    display: block;
+  footer span {
+    font-size: 8px;
   }
 }

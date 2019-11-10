@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="utf-8">
   <title>Fotomatic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="resources/css/reset.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="resources/css/style.css" rel="stylesheet">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
-
-  <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
-  <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Damion|Roboto:300,400,700|Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-
+  <!-- Header -->
   <header>
-    <div class="content">
-      <a href="#" class="desktop logo">
-        <img src="resources/images/ic-logo.svg" alt="">
-        <h2>otomatic</h2>
-      </a>
+    <div class="container-fluid">
+      <nav class="navbar navbar-fixed-top desktop">
+        <a class="navbar-brand" href="#"><img src="resources/images/ic-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">otomatic</a>
 
-      <nav class="desktop">
-        <ul>
-          <li><a href="#"><img src="resources/images/ic-product-detail.svg"> Product detail</a></li>
-          <li><a href="#"><img src="resources/images/ic-about-us.svg"> About us</a></li>
-          <li><a href="#"><img src="resources/images/instagram.png"> Follow us</a></li>
+        <ul class="navbar-nav">
+          <li><a class="nav-item nav-link" href="#">Product detail</a></li>
+          <li><a class="nav-item nav-link" href="#">About us</a></li>
+          <li><a class="nav-item nav-link" href="#">Follow us<img src="resources/images/instagram.png" width="20" height="20" class="d-inline-block align-top" alt=""></a></li>
+          <li class="tablet"><a class="nav-item" href="#">Join us</a></li>
         </ul>
       </nav>
 
-      <nav class="tablet">
-        <ul>
-          <li><a href="#" class="button">Join us</a></li>
-        </ul>
-      </nav>
-
-      <nav class="mobile">
-        <ul>
-          <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
-          <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
-          <li><a href="#" class="button">Join us</a></li>
+      <nav class="navbar navbar-fixed-top phone">
+        <ul class="navbar-nav">
+          <li><a class="nav-item nav-link" href="#"><img src="resources/images/ic-logo.svg" alt="home"></a></li>
+          <li><a class="nav-item nav-link" href="#"><img src="resources/images/ic-product-detail.svg" alt="product detail"></a></li>
+          <li><a class="nav-item nav-link" href="#"><img src="resources/images/ic-about-us.svg" alt=""></a></li>
+          <li class="tablet"><a class="nav-item" href="#">Join us</a></li>
         </ul>
       </nav>
     </div>
@@ -59,125 +52,105 @@
     </div>
 
     <div class="navbar-bottom">
-      <a href="../../index.html" class="text-center">
-        <img src="resources/images/logo_db.png" alt="">
-        <p>Back to index</p>
-      </a>
+      <a href="../../index.html" class="text-center">Back to index</a>
     </div>
   </div>
 
   <div class="closed-nav">
     <span onclick="openNav()"><</span>
-    <img src="resources/images/logo_db.png" alt="">
-    <p>B</p>
-    <p>a</p>
-    <p>c</p>
-    <p>k</p></br>
-    <p>t</p>
-    <p>o</p></br>
-    <p>I</p>
-    <p>n</p>
-    <p>d</p>
-    <p>e</p>
-    <p>x</p>
   </div>
 
-  <!-- MAIN -->
-  <div class="main-content">
+  <!-- Main Content -->
+  <div class="jumbotron">
 
-    <!-- SIGN UP -->
+    <div id="sign-up-cta">
+      <div class="content text-center">
+        <div class="header">
+          <h2 class="cursive">Instant</h2>
+          <h1 class="striking">FORMAT CAMERA</h1>
+        </div>
+        <div class="email">
+          <span>Email us to request a demo and be in our waiting list for the <strong>Febuary 2017</strong> release!</span>
+          <a href="#"><div class="button">Join the waiting list</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div id="sign-up-section" class="banner">
-      <div id="sign-up-cta">
-        <div class="content center">
-          <div class="header">
-            <h2 class="cursive">Instant</h2>
-            <h1 class="striking">FORMAT CAMERA</h1>
+    <!-- Features Section -->
+    <div id="features-section" class="container-fluid">
+      <div class="row">
+        <div class="feature col-sm-6">
+          <div class="text-center">
+            <div class="image-container">
+              <img src="resources/images/feature-1.png" />
+            </div>
+            <div class="content">
+              <h2>Advanced, automatic, instant</h2>
+              <h3>Shutter speed, apperture and flash output adjust automatically</h3>
+            </div>
           </div>
-          <div class="email">
-            <span>
-              Email us to request a demo and be in our waiting list for the <strong>Febuary 2017</strong> release!
-            </span>
-            <div class="button">
-              <a href="../../index.html#portfolio">
-                <img src="resources/images/logo_db.png"/>
-                <p>Back to Index</p>
-              </a>
+        </div>
+        <div class="feature col-sm-6">
+          <div class="text-center">
+            <div class="image-container">
+              <img src="resources/images/feature-2.png" />
+            </div>
+            <div class="content">
+              <h2>Beautifully crafted inside-out</h2>
+              <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- FEATURES -->
-
-    <div id="features">
-      <div class="feature">
-        <div class="center">
-          <div class="image-container">
-            <img src="resources/images/feature_1.jpg" />
-          </div>
-          <div class="content">
-            <h2>Advanced, automatic, instant</h2>
-            <h3>Shutter speed, apperture and flash output adjust automatically</h3>
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="center">
-          <div class="image-container">
-            <img src="./resources/images/feature_2.jpg" />
-          </div>
-          <div class="content">
-            <h2>Beautifully crafted inside-out</h2>
-            <h3>From the paint outside to the tiny screw inside, Fotomatic is crafted with love and 20-year of expertise</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FILTERS -->
-
-    <div id="filter">
-      <div class="content center">
+    <!-- Filters Section -->
+    <div id="filters-section" class="container-fluid">
+      <div class="content text-center row">
         <h2>Over 20+ filters to choose from</h2>
         <h3>Feed your creativity with 20 different filter designed by our eclectic in-house photographers!</h3>
       </div>
-      <div class="images-container">
-        <div class="image-container-fil">
-          <img src="./resources/images/filter_1.jpg" />
+      <div class="row images">
+        <div class="image-container col-xs-4 col-sm-3">
+          <img src="./resources/images/filter-1.png" />
         </div>
-        <div class="image-container-fil">
-          <img src="./resources/images/filter_2.jpg" />
+        <div class="image-container col-xs-4 col-sm-3">
+          <img src="./resources/images/filter-2.png" />
         </div>
-        <div class="image-container-fil">
-          <img src="./resources/images/filter_3.jpg" />
+        <div class="image-container col-xs-4 col-sm-3">
+          <img src="./resources/images/filter-3.png" />
         </div>
-        <div class="image-container-fil image-hide">
-          <img src="./resources/images/filter_4.jpg" />
+        <div class="image-container extra col-sm-3">
+          <img src="./resources/images/filter-4.png" />
         </div>
       </div>
     </div>
 
-    <!-- QUOTES -->
-
-    <div id="quote">
-      <div class="content center">
-        <span>“It’s truly something that could create a brand new photography Renaissance”</span>
-        <img src="./resources/images/photography-logo.png" />
+    <!-- Quotes Section -->
+    <div id="quotes-section" class="container-fluid">
+      <div class="row content text-center">
+        <span class="col-sm-10 quote">“It’s truly something that could create a brand new photography Renaissance”</span>
+        <div class="col-sm-2">
+          <img class="quote-citation" src="./resources/images/photography-logo.png" />
+        </div>
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- Footer -->
+    <footer class="container-fluid">
       <div class="content">
         <span class="copyright">© 2016  Fotomatic, All Rights Reserved</span>
         <span class="location">Designed in NYC</span>
       </div>
     </footer>
 
-  </div>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="resources/slick/slick.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="resources/js/main.js" type="text/javascript"></script>
 
-  <script src="resources/js/main.js" type="text/javascript"></script>
+  </div>
 </body>
 </html>

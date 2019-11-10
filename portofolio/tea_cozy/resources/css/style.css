@@ -173,16 +173,18 @@ header .back-to-index {
 
 /* The side navigation menu */
 .sidenav {
+  background-color: #154854;
+  font-family: monospace;
   height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 2;
-  top: 67px;
-  right: 0;
-  background-image: linear-gradient(to right, #fff986, #154854, #154854, #154854, #154854, #154854, #fff986);
   overflow-x: hidden;
   padding-top: 60px;
+  position: fixed;
+  right: 0;
+  text-shadow: -1.2px -1.2px 0 #F0AC0F, 1.2px -1.2px 0 #F0AC0F, -1.2px 1.2px 0 #F0AC0F, 1.2px 1.2px 0 #F0AC0F;
+  top: 67px;
   transition: 0.5s;
+  width: 0;
+  z-index: 3;
 }
 
 .sidenav a {
@@ -202,6 +204,7 @@ header .back-to-index {
 }
 
 .sidenav .navbar-header {
+  text-align: center;
   width: 100%;
 }
 
@@ -212,12 +215,13 @@ header .back-to-index {
 
 .sidenav .navbar-header img {
   width: 25px;
-  margin: 0 5px 3px 0;
+  margin: 0 15px 3px 0;
 }
 
 .sidenav .navbar-bottom {
   display: block;
   position: absolute;
+  width: 100%;
   bottom: 67px;
   padding-top: 10px;
   border-top: 3px solid white;
@@ -237,45 +241,27 @@ header .back-to-index {
 }
 
 .closed-nav {
-  font-weight: bold;
-  height: -webkit-fill-available;
-  width: fit-content;
-  bottom: 0;
-  border-left: 1px solid white;
-  position: fixed;
-  float: right;
-  right: 0;
-  z-index: 1;
   background-color: #154854;
-}
-
-.closed-nav {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  bottom: 0;
+  float: right;
+  font-weight: bold;
   height: 100px;
   opacity: 0.8;
-}
-
-.closed-nav img {
-  display: block;
-}
-
-.closed-nav p {
-  display: none;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 90px;
+  z-index: 2;
 }
 
 .closed-nav span {
-  font-size: 7rem;
-  padding: 0 20px;
-}
-
-.closed-nav img {
-  display: none;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.closed-nav p {
-  font-size: 18px;
+  color: white;
+  display: block;
+  font-family: monospace;
+  font-size: 70px;
+  line-height: 1.25;
 }
 
 /* MISSION */
@@ -422,14 +408,6 @@ footer h5 {
 }
 
 @media only screen and (max-width: 480px) {
-  .sidenav {
-    padding-top: 15px;
-  }.
-
-  .sidenav a {
-    font-size: 18px;
-  }
-
   #featured h4 {
     height: 38px;
   }

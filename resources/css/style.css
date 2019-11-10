@@ -376,6 +376,10 @@ footer .tablet {
     margin: 15px 0;
   }
 
+  #technical-skills .container {
+    margin-top: 20px;
+  }
+
   #technical-skills h2 {
     margin-bottom: 15px;
   }
@@ -388,6 +392,10 @@ footer .tablet {
     margin: 15px 0;
   }
 
+  #portfolio .container {
+    margin-top: 20px;
+  }
+
   #portfolio h2 {
     margin-bottom: 15px;
   }
@@ -398,6 +406,10 @@ footer .tablet {
 
   #contact {
     margin: 15px 0;
+  }
+
+  #contact .container {
+    margin-top: 20px;
   }
 
   #contact h2 {
@@ -419,6 +431,17 @@ footer .tablet {
 
   footer .tablet {
     display: block;
+  }
+
+  footer .tablet .text-left {
+    width: 55%;
+    display: inline-block;
+  }
+
+  footer .tablet .arrow {
+    width: 40%;
+    display: inline-block;
+    vertical-align: text-bottom;
   }
 
   footer .tablet li {
