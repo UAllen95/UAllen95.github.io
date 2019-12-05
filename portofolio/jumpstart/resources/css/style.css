@@ -80,6 +80,7 @@ header .navbar-nav li {
 /* The side navigation menu */
 .sidenav {
   background-color: #154854;
+  border-left: 1px solid white;
   font-family: monospace;
   height: 100%;
   overflow-x: hidden;
@@ -151,6 +152,7 @@ header .navbar-nav li {
   border-top: 1px solid white;
   border-left: 1px solid white;
   bottom: 0;
+  cursor: pointer;
   float: right;
   font-weight: bold;
   height: 100px;
